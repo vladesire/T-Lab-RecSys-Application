@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+    },
+    "analysis_alias": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+    },
+    "kind": {
+      "enum": [
+        "metric_table",
+        "comparison_table"
+      ]
+    },
+    "filters": {
+      "type": "object"
+    },
+    "columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "digits": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "field",
+          "label"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "caption": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "analysis_alias",
+    "kind",
+    "filters",
+    "columns",
+    "caption"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://researchflow.local/v1/table_spec.json"
+}

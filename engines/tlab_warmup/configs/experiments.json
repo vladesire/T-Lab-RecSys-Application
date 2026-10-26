@@ -1,0 +1,30 @@
+{
+  "schema": "tlab-experiments-v1",
+  "threads": 4,
+  "data": null,
+  "wall_hours": 6,
+  "per_job_seconds": 2700,
+  "max_retries": 1,
+  "target_rss_gib": 8,
+  "stop_rss_gib": 10,
+  "minimum_available_gib": 4,
+  "low_memory_seconds": 10,
+  "maximum_selected_rows": 8000000,
+  "bootstrap_replicates": 2000,
+  "search_rounds": 3,
+  "search_fit_cap": 24,
+  "search_min_gain": 0.0001,
+  "search_min_queries": 200,
+  "search_min_users": 20,
+  "search_min_novel": 50,
+  "additional_model_seed_offsets": [11, 29],
+  "iteration1_output": "runs/iteration1",
+  "panels": {
+    "iteration1": {"users": 100, "train": 3000, "development": 5000},
+    "calibration": {"users": 100, "train": 300, "development": 250},
+    "main": {"users": 1000, "train": 30000, "development": 20000}
+  },
+  "optional_artist": "blocked_pending_mapping_semantics_validation",
+  "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+  "optional_100_alternatives": "blocked_pending_variable_cardinality_validation"
+}

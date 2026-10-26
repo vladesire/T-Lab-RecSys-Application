@@ -1,0 +1,5 @@
+{
+  "total_active_seconds": 421.743512688,
+  "last_observed": "2026-10-25T20:21:16.806459+00:00",
+  "limitation": "abrupt parent termination can lose up to one heartbeat interval; paused time is excluded"
+}

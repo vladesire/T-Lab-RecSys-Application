@@ -1,0 +1,830 @@
+{
+  "schema_version": 1,
+  "kind": "ranking",
+  "predictions": [
+    {
+      "id": "P20_no_pair",
+      "method_id": "P20_no_pair",
+      "protocol_id": "P20",
+      "split": "development",
+      "format": "ranking_npz_v1",
+      "path": "predictions/P20_no_pair.npz",
+      "feature_count": 6,
+      "identity": {
+        "protocol_sha256": "0d8494df253b385c3e49f7418ecc84620c3bf45a00a48b357ac8539f1c0fe0fb",
+        "query_set_sha256": "f758336b261399ecf8c0f345616b77fa8af8570134e72de5d52f13944ded3273",
+        "candidate_set_sha256": "bed106ebf56d54bcc1964f825e291a06d0e06d299f3157f1bedb08361923c9f8"
+      },
+      "tags": {
+        "upstream_method": "no_pair",
+        "model_seed": 20261024,
+        "tie_seed": 20261024,
+        "feature_names": [
+          "user_count",
+          "user_hard_7d",
+          "item_count",
+          "item_hard_7d",
+          "item_hard_share_7d",
+          "user_recency_seconds"
+        ]
+      }
+    },
+    {
+      "id": "P20_original",
+      "method_id": "P20_original",
+      "protocol_id": "P20",
+      "split": "development",
+      "format": "ranking_npz_v1",
+      "path": "predictions/P20_original.npz",
+      "feature_count": 9,
+      "identity": {
+        "protocol_sha256": "0d8494df253b385c3e49f7418ecc84620c3bf45a00a48b357ac8539f1c0fe0fb",
+        "query_set_sha256": "f758336b261399ecf8c0f345616b77fa8af8570134e72de5d52f13944ded3273",
+        "candidate_set_sha256": "bed106ebf56d54bcc1964f825e291a06d0e06d299f3157f1bedb08361923c9f8"
+      },
+      "tags": {
+        "upstream_method": "original",
+        "model_seed": 20261024,
+        "tie_seed": 20261024,
+        "feature_names": [
+          "user_count",
+          "user_hard_7d",
+          "item_count",
+          "item_hard_7d",
+          "item_hard_share_7d",
+          "user_item_count",
+          "user_recency_seconds",
+          "user_item_recency_seconds",
+          "user_item_missing"
+        ]
+      }
+    },
+    {
+      "id": "P20_popularity",
+      "method_id": "P20_popularity",
+      "protocol_id": "P20",
+      "split": "development",
+      "format": "ranking_npz_v1",
+      "path": "predictions/P20_popularity.npz",
+      "feature_count": null,
+      "identity": {
+        "protocol_sha256": "0d8494df253b385c3e49f7418ecc84620c3bf45a00a48b357ac8539f1c0fe0fb",
+        "query_set_sha256": "f758336b261399ecf8c0f345616b77fa8af8570134e72de5d52f13944ded3273",
+        "candidate_set_sha256": "bed106ebf56d54bcc1964f825e291a06d0e06d299f3157f1bedb08361923c9f8"
+      },
+      "tags": {
+        "upstream_method": "popularity",
+        "model_seed": 20261024,
+        "tie_seed": 20261024,
+        "feature_names": null
+      }
+    },
+    {
+      "id": "P20_random",
+      "method_id": "P20_random",
+      "protocol_id": "P20",
+      "split": "development",
+      "format": "ranking_npz_v1",
+      "path": "predictions/P20_random.npz",
+      "feature_count": null,
+      "identity": {
+        "protocol_sha256": "0d8494df253b385c3e49f7418ecc84620c3bf45a00a48b357ac8539f1c0fe0fb",
+        "query_set_sha256": "f758336b261399ecf8c0f345616b77fa8af8570134e72de5d52f13944ded3273",
+        "candidate_set_sha256": "bed106ebf56d54bcc1964f825e291a06d0e06d299f3157f1bedb08361923c9f8"
+      },
+      "tags": {
+        "upstream_method": "random",
+        "model_seed": 20261024,
+        "tie_seed": 20261024,
+        "feature_names": null
+      }
+    },
+    {
+      "id": "P20_recency_rule",
+      "method_id": "P20_recency_rule",
+      "protocol_id": "P20",
+      "split": "development",
+      "format": "ranking_npz_v1",
+      "path": "predictions/P20_recency_rule.npz",
+      "feature_count": null,
+      "identity": {
+        "protocol_sha256": "0d8494df253b385c3e49f7418ecc84620c3bf45a00a48b357ac8539f1c0fe0fb",
+        "query_set_sha256": "f758336b261399ecf8c0f345616b77fa8af8570134e72de5d52f13944ded3273",
+        "candidate_set_sha256": "bed106ebf56d54bcc1964f825e291a06d0e06d299f3157f1bedb08361923c9f8"
+      },
+      "tags": {
+        "upstream_method": "recency_rule",
+        "model_seed": 20261024,
+        "tie_seed": 20261024,
+        "feature_names": null
+      }
+    },
+    {
+      "id": "U20_no_pair",
+      "method_id": "U20_no_pair",
+      "protocol_id": "U20",
+      "split": "development",
+      "format": "ranking_npz_v1",
+      "path": "predictions/U20_no_pair.npz",
+      "feature_count": 6,
+      "identity": {
+        "protocol_sha256": "0d8494df253b385c3e49f7418ecc84620c3bf45a00a48b357ac8539f1c0fe0fb",
+        "query_set_sha256": "f758336b261399ecf8c0f345616b77fa8af8570134e72de5d52f13944ded3273",
+        "candidate_set_sha256": "106267b728ac6ed7a6325571a3d421d81836bc965f83172dd0b791dc937a43a4"
+      },
+      "tags": {
+        "upstream_method": "no_pair",
+        "model_seed": 20261024,
+        "tie_seed": 20261024,
+        "feature_names": [
+          "user_count",
+          "user_hard_7d",
+          "item_count",
+          "item_hard_7d",
+          "item_hard_share_7d",
+          "user_recency_seconds"
+        ]
+      }
+    },
+    {
+      "id": "U20_original",
+      "method_id": "U20_original",
+      "protocol_id": "U20",
+      "split": "development",
+      "format": "ranking_npz_v1",
+      "path": "predictions/U20_original.npz",
+      "feature_count": 9,
+      "identity": {
+        "protocol_sha256": "0d8494df253b385c3e49f7418ecc84620c3bf45a00a48b357ac8539f1c0fe0fb",
+        "query_set_sha256": "f758336b261399ecf8c0f345616b77fa8af8570134e72de5d52f13944ded3273",
+        "candidate_set_sha256": "106267b728ac6ed7a6325571a3d421d81836bc965f83172dd0b791dc937a43a4"
+      },
+      "tags": {
+        "upstream_method": "original",
+        "model_seed": 20261024,
+        "tie_seed": 20261024,
+        "feature_names": [
+          "user_count",
+          "user_hard_7d",
+          "item_count",
+          "item_hard_7d",
+          "item_hard_share_7d",
+          "user_item_count",
+          "user_recency_seconds",
+          "user_item_recency_seconds",
+          "user_item_missing"
+        ]
+      }
+    },
+    {
+      "id": "U20_popularity",
+      "method_id": "U20_popularity",
+      "protocol_id": "U20",
+      "split": "development",
+      "format": "ranking_npz_v1",
+      "path": "predictions/U20_popularity.npz",
+      "feature_count": null,
+      "identity": {
+        "protocol_sha256": "0d8494df253b385c3e49f7418ecc84620c3bf45a00a48b357ac8539f1c0fe0fb",
+        "query_set_sha256": "f758336b261399ecf8c0f345616b77fa8af8570134e72de5d52f13944ded3273",
+        "candidate_set_sha256": "106267b728ac6ed7a6325571a3d421d81836bc965f83172dd0b791dc937a43a4"
+      },
+      "tags": {
+        "upstream_method": "popularity",
+        "model_seed": 20261024,
+        "tie_seed": 20261024,
+        "feature_names": null
+      }
+    },
+    {
+      "id": "U20_random",
+      "method_id": "U20_random",
+      "protocol_id": "U20",
+      "split": "development",
+      "format": "ranking_npz_v1",
+      "path": "predictions/U20_random.npz",
+      "feature_count": null,
+      "identity": {
+        "protocol_sha256": "0d8494df253b385c3e49f7418ecc84620c3bf45a00a48b357ac8539f1c0fe0fb",
+        "query_set_sha256": "f758336b261399ecf8c0f345616b77fa8af8570134e72de5d52f13944ded3273",
+        "candidate_set_sha256": "106267b728ac6ed7a6325571a3d421d81836bc965f83172dd0b791dc937a43a4"
+      },
+      "tags": {
+        "upstream_method": "random",
+        "model_seed": 20261024,
+        "tie_seed": 20261024,
+        "feature_names": null
+      }
+    },
+    {
+      "id": "U20_recency_rule",
+      "method_id": "U20_recency_rule",
+      "protocol_id": "U20",
+      "split": "development",
+      "format": "ranking_npz_v1",
+      "path": "predictions/U20_recency_rule.npz",
+      "feature_count": null,
+      "identity": {
+        "protocol_sha256": "0d8494df253b385c3e49f7418ecc84620c3bf45a00a48b357ac8539f1c0fe0fb",
+        "query_set_sha256": "f758336b261399ecf8c0f345616b77fa8af8570134e72de5d52f13944ded3273",
+        "candidate_set_sha256": "106267b728ac6ed7a6325571a3d421d81836bc965f83172dd0b791dc937a43a4"
+      },
+      "tags": {
+        "upstream_method": "recency_rule",
+        "model_seed": 20261024,
+        "tie_seed": 20261024,
+        "feature_names": null
+      }
+    }
+  ],
+  "metrics": [],
+  "coverage": [
+    {
+      "prediction_id": "P20_no_pair",
+      "queries": 5000,
+      "users": 80,
+      "familiarity": {
+        "positive_repeat_fraction": 0.8334,
+        "alternative_repeat_fraction": 0.09444,
+        "distinct_development_candidate_items": 34377,
+        "unique_alternative_fraction": 0.33914,
+        "queries": 5000,
+        "effective_alternative_item_count_entropy": 20205.77857589359,
+        "alternative_top1pct_item_share": 0.11139
+      }
+    },
+    {
+      "prediction_id": "P20_original",
+      "queries": 5000,
+      "users": 80,
+      "familiarity": {
+        "positive_repeat_fraction": 0.8334,
+        "alternative_repeat_fraction": 0.09444,
+        "distinct_development_candidate_items": 34377,
+        "unique_alternative_fraction": 0.33914,
+        "queries": 5000,
+        "effective_alternative_item_count_entropy": 20205.77857589359,
+        "alternative_top1pct_item_share": 0.11139
+      }
+    },
+    {
+      "prediction_id": "P20_popularity",
+      "queries": 5000,
+      "users": 80,
+      "familiarity": {
+        "positive_repeat_fraction": 0.8334,
+        "alternative_repeat_fraction": 0.09444,
+        "distinct_development_candidate_items": 34377,
+        "unique_alternative_fraction": 0.33914,
+        "queries": 5000,
+        "effective_alternative_item_count_entropy": 20205.77857589359,
+        "alternative_top1pct_item_share": 0.11139
+      }
+    },
+    {
+      "prediction_id": "P20_random",
+      "queries": 5000,
+      "users": 80,
+      "familiarity": {
+        "positive_repeat_fraction": 0.8334,
+        "alternative_repeat_fraction": 0.09444,
+        "distinct_development_candidate_items": 34377,
+        "unique_alternative_fraction": 0.33914,
+        "queries": 5000,
+        "effective_alternative_item_count_entropy": 20205.77857589359,
+        "alternative_top1pct_item_share": 0.11139
+      }
+    },
+    {
+      "prediction_id": "P20_recency_rule",
+      "queries": 5000,
+      "users": 80,
+      "familiarity": {
+        "positive_repeat_fraction": 0.8334,
+        "alternative_repeat_fraction": 0.09444,
+        "distinct_development_candidate_items": 34377,
+        "unique_alternative_fraction": 0.33914,
+        "queries": 5000,
+        "effective_alternative_item_count_entropy": 20205.77857589359,
+        "alternative_top1pct_item_share": 0.11139
+      }
+    },
+    {
+      "prediction_id": "U20_no_pair",
+      "queries": 5000,
+      "users": 80,
+      "familiarity": {
+        "positive_repeat_fraction": 0.8334,
+        "alternative_repeat_fraction": 0.03296,
+        "distinct_development_candidate_items": 48622,
+        "unique_alternative_fraction": 0.47953,
+        "queries": 5000,
+        "effective_alternative_item_count_entropy": 41734.03795953386,
+        "alternative_top1pct_item_share": 0.02998
+      }
+    },
+    {
+      "prediction_id": "U20_original",
+      "queries": 5000,
+      "users": 80,
+      "familiarity": {
+        "positive_repeat_fraction": 0.8334,
+        "alternative_repeat_fraction": 0.03296,
+        "distinct_development_candidate_items": 48622,
+        "unique_alternative_fraction": 0.47953,
+        "queries": 5000,
+        "effective_alternative_item_count_entropy": 41734.03795953386,
+        "alternative_top1pct_item_share": 0.02998
+      }
+    },
+    {
+      "prediction_id": "U20_popularity",
+      "queries": 5000,
+      "users": 80,
+      "familiarity": {
+        "positive_repeat_fraction": 0.8334,
+        "alternative_repeat_fraction": 0.03296,
+        "distinct_development_candidate_items": 48622,
+        "unique_alternative_fraction": 0.47953,
+        "queries": 5000,
+        "effective_alternative_item_count_entropy": 41734.03795953386,
+        "alternative_top1pct_item_share": 0.02998
+      }
+    },
+    {
+      "prediction_id": "U20_random",
+      "queries": 5000,
+      "users": 80,
+      "familiarity": {
+        "positive_repeat_fraction": 0.8334,
+        "alternative_repeat_fraction": 0.03296,
+        "distinct_development_candidate_items": 48622,
+        "unique_alternative_fraction": 0.47953,
+        "queries": 5000,
+        "effective_alternative_item_count_entropy": 41734.03795953386,
+        "alternative_top1pct_item_share": 0.02998
+      }
+    },
+    {
+      "prediction_id": "U20_recency_rule",
+      "queries": 5000,
+      "users": 80,
+      "familiarity": {
+        "positive_repeat_fraction": 0.8334,
+        "alternative_repeat_fraction": 0.03296,
+        "distinct_development_candidate_items": 48622,
+        "unique_alternative_fraction": 0.47953,
+        "queries": 5000,
+        "effective_alternative_item_count_entropy": 41734.03795953386,
+        "alternative_top1pct_item_share": 0.02998
+      }
+    }
+  ],
+  "costs": [
+    {
+      "job_id": "P20_no_pair",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:49.552176+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/P20_no_pair.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/P20_no_pair.attempt1.partial",
+          "wall_seconds_so_far": 0.7961308749945601,
+          "finished": "2026-10-25T15:57:50.604491+00:00",
+          "wall_seconds": 1.0512659169908147,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 419037184,
+        "minimum_system_available_bytes": 10342678528,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "P20_original",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:47.855081+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/P20_original.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/P20_original.attempt1.partial",
+          "wall_seconds_so_far": 1.0591290830052458,
+          "finished": "2026-10-25T15:57:49.169071+00:00",
+          "wall_seconds": 1.3128929999948014,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 418381824,
+        "minimum_system_available_bytes": 10036641792,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "P20_popularity",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:45.988340+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/P20_popularity.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/P20_popularity.attempt1.partial",
+          "wall_seconds_so_far": 0.2730492080008844,
+          "finished": "2026-10-25T15:57:46.517559+00:00",
+          "wall_seconds": 0.5281294999876991,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 231079936,
+        "minimum_system_available_bytes": 10378330112,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "P20_random",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:44.956376+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/P20_random.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/P20_random.attempt1.partial",
+          "wall_seconds_so_far": 0.27636216599785257,
+          "finished": "2026-10-25T15:57:45.485715+00:00",
+          "wall_seconds": 0.5282863750035176,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 277725184,
+        "minimum_system_available_bytes": 10342088704,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "P20_recency_rule",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:46.918270+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/P20_recency_rule.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/P20_recency_rule.attempt1.partial",
+          "wall_seconds_so_far": 0.2745045830088202,
+          "finished": "2026-10-25T15:57:47.449020+00:00",
+          "wall_seconds": 0.5295587500004331,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 287637504,
+        "minimum_system_available_bytes": 10016866304,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "U20_no_pair",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:43.250594+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/U20_no_pair.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/U20_no_pair.attempt1.partial",
+          "wall_seconds_so_far": 1.0612793330074055,
+          "finished": "2026-10-25T15:57:44.563962+00:00",
+          "wall_seconds": 1.3124076660024002,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 402341888,
+        "minimum_system_available_bytes": 10318397440,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "U20_original",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:41.551109+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/U20_original.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/U20_original.attempt1.partial",
+          "wall_seconds_so_far": 1.0624003750126576,
+          "finished": "2026-10-25T15:57:42.868907+00:00",
+          "wall_seconds": 1.3167276660096832,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 497090560,
+        "minimum_system_available_bytes": 10481827840,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "U20_popularity",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:39.962178+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/U20_popularity.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/U20_popularity.attempt1.partial",
+          "wall_seconds_so_far": 0.008132292001391761,
+          "finished": "2026-10-25T15:57:40.227913+00:00",
+          "wall_seconds": 0.26478191700880416,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 137494528,
+        "minimum_system_available_bytes": 10783342592,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "U20_random",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:39.043742+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/U20_random.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/U20_random.attempt1.partial",
+          "wall_seconds_so_far": 0.279859000002034,
+          "finished": "2026-10-25T15:57:39.579718+00:00",
+          "wall_seconds": 0.53494425000099,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 255131648,
+        "minimum_system_available_bytes": 10783342592,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "U20_recency_rule",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:40.638162+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/U20_recency_rule.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/U20_recency_rule.attempt1.partial",
+          "wall_seconds_so_far": 0.2725257919955766,
+          "finished": "2026-10-25T15:57:41.166965+00:00",
+          "wall_seconds": 0.5276613750029355,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 262111232,
+        "minimum_system_available_bytes": 10549542912,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "artist_family",
+      "status": "blocked",
+      "attempts": [],
+      "resources": {}
+    },
+    {
+      "job_id": "candidate_count_100",
+      "status": "blocked",
+      "attempts": [],
+      "resources": {}
+    },
+    {
+      "job_id": "data_iteration1",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:27.803884+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/data_iteration1.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/data/batches/25fe7c97df0328398130/data_iteration1.attempt1.partial",
+          "wall_seconds_so_far": 2.9031594169937307,
+          "finished": "2026-10-25T15:57:30.963525+00:00",
+          "wall_seconds": 3.158379917003913,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 818216960,
+        "minimum_system_available_bytes": 10761191424,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "novel_enriched_sample",
+      "status": "blocked",
+      "attempts": [],
+      "resources": {}
+    },
+    {
+      "job_id": "prepare_P20",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:34.155249+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/prepare_P20.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/data/batches/25fe7c97df0328398130/prepare_P20.attempt1.partial",
+          "wall_seconds_so_far": 4.210372792003909,
+          "finished": "2026-10-25T15:57:38.621566+00:00",
+          "wall_seconds": 4.465439999999944,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 452100096,
+        "minimum_system_available_bytes": 10852892672,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "prepare_U20",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:30.973276+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/prepare_U20.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/data/batches/25fe7c97df0328398130/prepare_U20.attempt1.partial",
+          "wall_seconds_so_far": 2.8972346670052502,
+          "finished": "2026-10-25T15:57:34.126793+00:00",
+          "wall_seconds": 3.1523618749924935,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 436289536,
+        "minimum_system_available_bytes": 11211325440,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "secondary_3000_users",
+      "status": "blocked",
+      "attempts": [],
+      "resources": {}
+    },
+    {
+      "job_id": "source",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:27.272277+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/source.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/source.attempt1.partial",
+          "wall_seconds_so_far": 0.2719185000023572,
+          "finished": "2026-10-25T15:57:27.800378+00:00",
+          "wall_seconds": 0.5271439159987494,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 267665408,
+        "minimum_system_available_bytes": 10642685952,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "summary_P20",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:51.142336+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/summary_P20.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/summary_P20.attempt1.partial",
+          "wall_seconds_so_far": 0.2758682090061484,
+          "finished": "2026-10-25T15:57:51.674952+00:00",
+          "wall_seconds": 0.5309857090032892,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 240533504,
+        "minimum_system_available_bytes": 10424795136,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    },
+    {
+      "job_id": "summary_U20",
+      "status": "completed",
+      "attempts": [
+        {
+          "started": "2026-10-25T15:57:50.608666+00:00",
+          "number": 1,
+          "log": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/logs/summary_U20.attempt1.log",
+          "partial_output": "/Users/roark/Exocortex/Business/Endeavors/ML Career/tlab/tlab_contract_kit_v1/project/runs/.staging/R-warmup-anchor-001/payload/workspace/runs/R-warmup-anchor-001/jobs/summary_U20.attempt1.partial",
+          "wall_seconds_so_far": 0.2728930000012042,
+          "finished": "2026-10-25T15:57:51.137956+00:00",
+          "wall_seconds": 0.5281235830043443,
+          "returncode": 0,
+          "stop_reason": null
+        }
+      ],
+      "resources": {
+        "peak_tree_rss_bytes": 238534656,
+        "minimum_system_available_bytes": 10390241280,
+        "target_rss_exceeded": false,
+        "poll_seconds": 0.25,
+        "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+      }
+    }
+  ],
+  "checks": {
+    "passed": true,
+    "items": [
+      {
+        "id": "upstream-anchor",
+        "status": "passed",
+        "detail": "Actual-data anchor: upstream U20 original max absolute difference <=1e-8",
+        "evidence": [
+          "provenance.json",
+          "upstream.log"
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic executions establish adapter behavior only; actual Mac anchor acceptance remains required.",
+    "Sampled candidates and reused development data are not a pristine final test.",
+    "Full feature dictionary is computed upstream; selected column count does not measure feature computation savings.",
+    "Upstream metrics use integer item fallback; port uses lexical IDs if a 64-bit tie-key collision occurs."
+  ],
+  "artifacts": [
+    {
+      "path": "provenance.json",
+      "kind": "provenance",
+      "description": "Verified upstream source/lock/environment, anchor, effective config, command and archive identities"
+    },
+    {
+      "path": "workspace/runs/R-warmup-anchor-001-results.tar.gz",
+      "kind": "upstream_archive",
+      "description": "Unmodified upstream batch export"
+    },
+    {
+      "path": "upstream.log",
+      "kind": "log",
+      "description": "Native runner log"
+    }
+  ]
+}

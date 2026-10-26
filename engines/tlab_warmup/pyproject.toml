@@ -1,0 +1,23 @@
+[project]
+name = "tlab-warmup"
+version = "0.1.0"
+description = "Bounded, point-in-time Yambda recommendation pilot"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "numpy==2.2.6",
+  "pyarrow==21.0.0",
+  "scikit-learn==1.7.2",
+  "threadpoolctl==3.6.0",
+  "psutil==7.0.0",
+]
+
+[project.scripts]
+tlab-warmup = "tlab_warmup.pipeline:main"
+tlab-experiments = "tlab_warmup.batch:main"
+
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tlab_warmup"]

@@ -1,0 +1,9 @@
+# Explicit setup dependencies; smoke never invokes an installer.
+# article.cls / plain.bst / bibtex: latex and bibtex base components.
+latex
+bibtex
+# graphicx.sty and booktabs.sty:
+graphics
+booktabs
+# CLI build driver, separately installed on the Mac when necessary:
+latexmk

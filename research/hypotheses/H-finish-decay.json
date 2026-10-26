@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "H-finish-decay",
+  "branch_ids": [
+    "B-finish-study",
+    "B-finish-representations"
+  ],
+  "question": "Does matched smooth decay yield a practically useful gain against matched manual hard windows?",
+  "rationale": "Operational questions chosen after inspecting previous development pilots; one bounded reproduction/extension batch, not new independent confirmation. The tolerance is chosen for this study, not a domain constant.",
+  "estimand": {
+    "metric": "ndcg@10",
+    "weighting": "event",
+    "primary_protocol": "P20",
+    "sensitivity_protocol": "U20",
+    "split": "development",
+    "interval": "95% paired user-cluster bootstrap; conditional descriptive development uncertainty",
+    "secondary_outputs": [
+      "recall@10",
+      "equal-user means",
+      "all/repeat/novel query and user counts"
+    ],
+    "evidence_boundary": "Pilot-informed and development-only; already seen pilot and historical overnight outputs. No preregistration, blind confirmation, independent sample or final-test claim."
+  },
+  "comparison": {
+    "left": "decay",
+    "right": "manual",
+    "subgroup": "all",
+    "difference": "decay-minus-manual",
+    "feature_counts": [
+      17,
+      17
+    ]
+  },
+  "decision_rule": {
+    "delta": 0.005,
+    "supported": "estimate >= 0.005 and ci_low > 0",
+    "unsupported": "ci_high <= 0 excludes a positive effect at this descriptive precision",
+    "inconclusive": "otherwise; report whether 0.005 is inside the interval and the exact observed precision; do not call nonsignificance equivalence",
+    "qualification": "This operational rule does not assert that the whole interval exceeds 0.005."
+  },
+  "references": [
+    "evidence/baseline/analysis.json",
+    "evidence/cold-start-verification/analysis.json",
+    "research/design.yaml",
+    "research/decisions/D-finish-study-plan.json"
+  ],
+  "created_at": "2026-10-25T18:24:11.391655+00:00"
+}

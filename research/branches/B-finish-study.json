@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "B-finish-study",
+  "title": "One bounded pilot-informed development study",
+  "purpose": "One shared development experiment for manual features, temporal decay, automatic selection and repeat/novel ablation. Child branches reference the same run and are not independent replications.",
+  "parent_id": null,
+  "hypothesis_ids": [
+    "H-finish-compact",
+    "H-finish-decay",
+    "H-finish-repeat"
+  ],
+  "planned_experiment_ids": [
+    "E-finish-study"
+  ],
+  "status": "closed",
+  "status_decision_id": "D-submission-results"
+}

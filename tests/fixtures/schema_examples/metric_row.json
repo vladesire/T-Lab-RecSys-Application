@@ -1,0 +1,13 @@
+{
+  "method_id": "A",
+  "protocol_id": "P-fixture",
+  "split": "development",
+  "subgroup": "all",
+  "metric": "ndcg@2",
+  "weighting": "event",
+  "value": 0.6666666666666666,
+  "n_queries": 3,
+  "n_users": 2,
+  "query_set_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "candidate_set_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+}

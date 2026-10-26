@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "filename": "tlab-final-evidence-selected.tar.xz",
+  "sha256": "e12ea967bd550b036013eb0e498b75f6659508ebe51c7814b342fe4e63182b77",
+  "size_bytes": 39005572,
+  "download_url": null,
+  "kind": "selected_final_evidence_export_v1",
+  "note": "Selected final evidence included in this repository; recomputable feature matrices are omitted.",
+  "repository_path": "runs/published/final/selected-evidence.tar.xz"
+}

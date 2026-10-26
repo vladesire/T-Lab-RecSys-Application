@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "filename": "tlab-evidence.tar.gz",
+  "sha256": "c6770257e2d1b7ae8c727dfda93b8db4df4d52f80a26ca24a1e8070514bde7a7",
+  "size_bytes": 22734244,
+  "complete_bundles": [
+    {
+      "path": "analyses/A-baseline-baseline-001-b6528bb29a8f4eb8b9a1c468",
+      "kind": "analysis"
+    },
+    {
+      "path": "build/paper/P-baseline-baseline-001-6ebc5ab68fd2a2cab3a931a81d84fbae9ef1533e122632f336c1186ae9b41b35",
+      "kind": "publication"
+    },
+    {
+      "path": "build/compiled/55db16d9992ae82431633e129db51a33",
+      "kind": "compiled"
+    },
+    {
+      "path": "reviews/baseline-acceptance/baseline-001/C-baseline-baseline-001",
+      "kind": "context"
+    }
+  ],
+  "partial_run_exports": [
+    "local-history/partial-runs/R-warmup-anchor-001"
+  ],
+  "download_url": null,
+  "note": "Distributed beside the source ZIP. A GitHub Release URL may be added only after the owner uploads this exact archive. No full raw dataset is included."
+}

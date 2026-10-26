@@ -1,0 +1,28 @@
+{
+  "source_files": {
+    "cost-table.tex": "7d965a8f4fa899776c914bf4a73746bcd67bfbe74f47ac1af22369ee8ea3260e",
+    "effect-table.tex": "0671afb2bb6d2b39b9ef4799c23d7b42f6e02c653ff0c6b0c647b57043a76ae1",
+    "effects.pdf": "7bcf07615c9dae52479c2d7e6fb5495b7b16bf09244a1ada3c3d8fe95d650d32",
+    "effects.png": "d4ef7392cc646c44e42c03fe17effa91dac9015b7a6e4c9bd3abb69380098dae",
+    "evidence.json": "d27187e8e0c43ced41d39a7cc9d51b77a4575cfccaa478eeeee7a698ddacd6c3",
+    "final.json": "599893d2ae9e0437415cb9b095721a5c424a391111f81ebd989d6ae0b2455594",
+    "freeze.json": "96c3d24f322623ce63e68ba785abc99fbe09b7924098ad9801836279498b51a1",
+    "main.tex": "c2b5b3d0bc245f13a72e17eac603138d744685653128e0bc456c8134ea5680e1",
+    "owner-mac-analysis.json": "ba6381d9465b5e11ca1378896478b5de28d7c69914b8c4741cf3917673510763",
+    "quality-tables.tex": "e4ee4ad74b7e3de0989f41eadfec370021e4769f58dff1d48f581f22764dc210",
+    "quality.pdf": "9b7b2382ef5f32d716df16676382a968c15150074b973bf51b484bbc840508a5",
+    "quality.png": "e290a648981714d13daec0b13bc095eb22fcb62f42c0dcad31c6c250cb215061",
+    "repetition.pdf": "fe6b603f8421fa280e04ce32cd256ffcf79a6bcf01e084dfcf7eab1b8d21cb4b",
+    "repetition.png": "4f0a53ea54d5250146dbb83a6243450c276c88b56f4e98ea821252c2ca5527d2",
+    "search.pdf": "54271f01cf072e06d45f68d5b4bc5bfc3bc84517181dc4b8c18ddac61dceff54",
+    "search.png": "73b715e775e6ed263557f11bc86a7cdd9b6c61e6c048abde58e5d2a931c34ad5",
+    "study.json": "eaf4f350c46da072074f3e6f73d091f65e381dd3b060efc9e01c7333b2887383"
+  },
+  "pdf_sha256": "00650aa79be94be913a978553781bb487806a12b72673decd970df84762a0afa",
+  "compiler": "latexmk -pdf",
+  "checks": {
+    "compiled": true,
+    "no_overflow": true,
+    "no_undefined_references": true
+  }
+}

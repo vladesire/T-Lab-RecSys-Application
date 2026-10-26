@@ -1,0 +1,128 @@
+{
+  "method": "random_search",
+  "seed": 20261024,
+  "protocol": "U20",
+  "query_candidate_hash": "121c2d9741dc7239a25bafdcc9872c74d618fff1f29cd62f6547d7e8167985b5",
+  "metrics": {
+    "all": {
+      "queries": 20000,
+      "users": 744,
+      "ndcg10": 0.9155592133957853,
+      "recall10": 0.98205,
+      "ndcg10_user_macro": 0.9043457377307281,
+      "recall10_user_macro": 0.9777129140967498
+    },
+    "repeat": {
+      "queries": 15684,
+      "users": 697,
+      "ndcg10": 0.9902399870574481,
+      "recall10": 1.0,
+      "ndcg10_user_macro": 0.9924001249295852,
+      "recall10_user_macro": 1.0
+    },
+    "novel": {
+      "queries": 4316,
+      "users": 635,
+      "ndcg10": 0.6441752342230512,
+      "recall10": 0.9168211306765524,
+      "ndcg10_user_macro": 0.6675421444253609,
+      "recall10_user_macro": 0.9178724835421563
+    },
+    "V_search": {
+      "queries": 10238,
+      "users": 676,
+      "ndcg10": 0.9205257899004544,
+      "recall10": 0.9831021683922642,
+      "ndcg10_user_macro": 0.9104526384288526,
+      "recall10_user_macro": 0.9788351684289841
+    },
+    "V_check": {
+      "queries": 9762,
+      "users": 661,
+      "ndcg10": 0.9103504641379688,
+      "recall10": 0.9809465273509527,
+      "ndcg10_user_macro": 0.9009532387584153,
+      "recall10_user_macro": 0.9772525705054363
+    },
+    "anchor": {
+      "queries": 50,
+      "users": 30,
+      "ndcg10": 0.8943251015900429,
+      "recall10": 0.98,
+      "ndcg10_user_macro": 0.8762576301897519,
+      "recall10_user_macro": 0.9666666666666667
+    },
+    "new_queries": {
+      "queries": 19950,
+      "users": 744,
+      "ndcg10": 0.9156124317211128,
+      "recall10": 0.9820551378446115,
+      "ndcg10_user_macro": 0.9043968010287822,
+      "recall10_user_macro": 0.9777206649791638
+    },
+    "V_search_repeat": {
+      "queries": 8072,
+      "users": 625,
+      "ndcg10": 0.9910428995783492,
+      "recall10": 1.0,
+      "ndcg10_user_macro": 0.9924361236520385,
+      "recall10_user_macro": 1.0
+    },
+    "V_search_novel": {
+      "queries": 2166,
+      "users": 507,
+      "ndcg10": 0.6577307255791406,
+      "recall10": 0.920129270544783,
+      "ndcg10_user_macro": 0.6714486108382595,
+      "recall10_user_macro": 0.9216516545465606
+    },
+    "V_check_repeat": {
+      "queries": 7612,
+      "users": 618,
+      "ndcg10": 0.9893885538114269,
+      "recall10": 1.0,
+      "ndcg10_user_macro": 0.9907326780806774,
+      "recall10_user_macro": 1.0
+    },
+    "V_check_novel": {
+      "queries": 2150,
+      "users": 501,
+      "ndcg10": 0.6305188647917537,
+      "recall10": 0.9134883720930232,
+      "ndcg10_user_macro": 0.6525221180004448,
+      "recall10_user_macro": 0.9141119150814929
+    }
+  },
+  "fit_seconds": 0.0,
+  "application_seconds": 0.8115772989999641,
+  "model_serialization_seconds": 0.008755382999879657,
+  "reused_identical_model_from": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_forward_frozen",
+  "feature_names": [
+    "user_count",
+    "item_count",
+    "user_item_count",
+    "user_recency_seconds",
+    "item_recency_seconds",
+    "user_item_recency_seconds",
+    "user_item_missing",
+    "user_hard_7d",
+    "user_hard_30d",
+    "item_hard_7d",
+    "item_hard_30d",
+    "user_item_hard_7d",
+    "user_item_hard_30d",
+    "user_item_decay_1d",
+    "user_item_decay_7d",
+    "user_item_decay_30d",
+    "user_item_decay_90d",
+    "item_hard_share_7d",
+    "pair_hard_affinity_7d",
+    "item_hard_share_30d",
+    "pair_hard_affinity_30d",
+    "pair_decay_affinity_1d",
+    "pair_decay_affinity_7d",
+    "pair_decay_affinity_30d",
+    "pair_decay_affinity_90d"
+  ],
+  "feature_count": 25
+}

@@ -1,0 +1,150 @@
+{
+  "method": "all",
+  "seed": 20261024,
+  "protocol": "P20",
+  "query_candidate_hash": "7dcd0d6b6b54321c8feb7e702f488a647dd0cb9050da900fc68c1aab271feb43",
+  "metrics": {
+    "all": {
+      "queries": 20000,
+      "users": 744,
+      "ndcg10": 0.7974187705393632,
+      "recall10": 0.91775,
+      "ndcg10_user_macro": 0.7640550227474748,
+      "recall10_user_macro": 0.9004567744165018
+    },
+    "repeat": {
+      "queries": 15684,
+      "users": 697,
+      "ndcg10": 0.9372528777888285,
+      "recall10": 1.0,
+      "ndcg10_user_macro": 0.9418782675222815,
+      "recall10_user_macro": 1.0
+    },
+    "novel": {
+      "queries": 4316,
+      "users": 635,
+      "ndcg10": 0.2892727700526589,
+      "recall10": 0.6188600556070436,
+      "ndcg10_user_macro": 0.3018308737531217,
+      "recall10_user_macro": 0.6329514841309009
+    },
+    "V_search": {
+      "queries": 10238,
+      "users": 676,
+      "ndcg10": 0.803637060104754,
+      "recall10": 0.9205899589763625,
+      "ndcg10_user_macro": 0.778764630083098,
+      "recall10_user_macro": 0.9123296299296578
+    },
+    "V_check": {
+      "queries": 9762,
+      "users": 661,
+      "ndcg10": 0.790897274066256,
+      "recall10": 0.9147715632042615,
+      "ndcg10_user_macro": 0.7662455052818198,
+      "recall10_user_macro": 0.8973866547284547
+    },
+    "anchor": {
+      "queries": 50,
+      "users": 30,
+      "ndcg10": 0.7108694688469348,
+      "recall10": 0.84,
+      "ndcg10_user_macro": 0.6831062357808462,
+      "recall10_user_macro": 0.81
+    },
+    "new_queries": {
+      "queries": 19950,
+      "users": 744,
+      "ndcg10": 0.7976356860824521,
+      "recall10": 0.9179448621553885,
+      "ndcg10_user_macro": 0.7646537456447318,
+      "recall10_user_macro": 0.9006446485938556
+    },
+    "V_search_repeat": {
+      "queries": 8072,
+      "users": 625,
+      "ndcg10": 0.9383310390793466,
+      "recall10": 1.0,
+      "ndcg10_user_macro": 0.9430628858058553,
+      "recall10_user_macro": 1.0
+    },
+    "V_search_novel": {
+      "queries": 2166,
+      "users": 507,
+      "ndcg10": 0.3016750110360051,
+      "recall10": 0.6246537396121884,
+      "ndcg10_user_macro": 0.33403661310744376,
+      "recall10_user_macro": 0.6695613457050399
+    },
+    "V_check_repeat": {
+      "queries": 7612,
+      "users": 618,
+      "ndcg10": 0.9361095622427092,
+      "recall10": 1.0,
+      "ndcg10_user_macro": 0.9429804013628574,
+      "recall10_user_macro": 1.0
+    },
+    "V_check_novel": {
+      "queries": 2150,
+      "users": 501,
+      "ndcg10": 0.27677823332246,
+      "recall10": 0.6130232558139534,
+      "ndcg10_user_macro": 0.27891693759126096,
+      "recall10_user_macro": 0.6133375046260422
+    }
+  },
+  "fit_seconds": 4.221963778999907,
+  "application_seconds": 0.9078713120002249,
+  "model_serialization_seconds": 0.009195610000006127,
+  "reused_identical_model_from": null,
+  "feature_names": [
+    "user_count",
+    "item_count",
+    "user_item_count",
+    "user_recency_seconds",
+    "item_recency_seconds",
+    "user_item_recency_seconds",
+    "user_item_missing",
+    "user_hard_1d",
+    "user_hard_7d",
+    "user_hard_30d",
+    "user_hard_90d",
+    "user_decay_1d",
+    "user_decay_7d",
+    "user_decay_30d",
+    "user_decay_90d",
+    "item_hard_1d",
+    "item_hard_7d",
+    "item_hard_30d",
+    "item_hard_90d",
+    "item_decay_1d",
+    "item_decay_7d",
+    "item_decay_30d",
+    "item_decay_90d",
+    "user_item_hard_1d",
+    "user_item_hard_7d",
+    "user_item_hard_30d",
+    "user_item_hard_90d",
+    "user_item_decay_1d",
+    "user_item_decay_7d",
+    "user_item_decay_30d",
+    "user_item_decay_90d",
+    "item_hard_share_1d",
+    "pair_hard_affinity_1d",
+    "item_hard_share_7d",
+    "pair_hard_affinity_7d",
+    "item_hard_share_30d",
+    "pair_hard_affinity_30d",
+    "item_hard_share_90d",
+    "pair_hard_affinity_90d",
+    "item_decay_share_1d",
+    "pair_decay_affinity_1d",
+    "item_decay_share_7d",
+    "pair_decay_affinity_7d",
+    "item_decay_share_30d",
+    "pair_decay_affinity_30d",
+    "item_decay_share_90d",
+    "pair_decay_affinity_90d"
+  ],
+  "feature_count": 47
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "scientific": {
+    "experiment_id": "E-fixture",
+    "branch_id": "B-fixture",
+    "hypothesis_ids": [
+      "H-fixture"
+    ],
+    "phase": "fixture",
+    "runner_id": "fixture",
+    "protocol": {
+      "id": "P-fixture",
+      "split": "development",
+      "description": "synthetic fixture only"
+    },
+    "parameters": {
+      "variant": "base"
+    }
+  },
+  "runtime": {
+    "command": [
+      "python",
+      "runners/fixture/runner.py"
+    ],
+    "code_paths": [
+      "runners/fixture/runner.py"
+    ],
+    "data_refs": [],
+    "research_paths": [],
+    "resources": {
+      "timeout_seconds": 30,
+      "memory_limit_bytes": null
+    }
+  }
+}

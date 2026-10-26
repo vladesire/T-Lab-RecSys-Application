@@ -1,0 +1,18 @@
+{
+  "ready": true,
+  "phase": "overnight",
+  "code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+  "plan_identity": "97ed9048f869712d5c5d5f56226e4b17a5a0612620ed5dfcd31ff05b0a56545b",
+  "test_scored": false,
+  "stop_reason": null,
+  "states": {
+    "completed": 35,
+    "blocked": 4
+  },
+  "blocked": {
+    "artist_family": "blocked_pending_mapping_semantics_validation",
+    "secondary_3000_users": "blocked_pending_secondary_scale_calibration",
+    "candidate_count_100": "blocked_pending_variable_cardinality_validation",
+    "novel_enriched_sample": "not enabled; natural-prevalence novel breakdown retained"
+  }
+}

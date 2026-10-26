@@ -1,0 +1,136 @@
+# DESIGN SPECIFICATION ONLY: not an executable config for the current runner.
+schema: tlab-overnight-plan-v1
+status: planned_not_implemented
+decision_date: "2026-10-24"
+timezone: Europe/Moscow
+requires:
+  - passing_protocol_and_weighted_sampler_checks
+  - frozen_manifest_before_unattended_execution
+  - existing_project_extended_not_rewritten
+  - local_calibration
+test_policy:
+  score_final_test_overnight: false
+  retain_original_boundaries: true
+  update_features_from_strictly_past_events_only: true
+  fitting_window: original_training_interval
+cohorts:
+  diagnostic_users: 100
+  primary_users: 1000
+  retain_original_panel: true
+  complete_release_histories: true
+  optional_secondary_users: 3000
+  optional_secondary_requires_resource_headroom: true
+query_caps:
+  diagnostic_train: 3000
+  diagnostic_development: 5000
+  main_train: 30000
+  main_development: 20000
+  novel_diagnostic: 5000
+  include_unweighted_novel_enriched_sample_in_primary_aggregate: false
+candidates:
+  U20:
+    role: original_reference_and_secondary
+    alternatives: 20
+    distribution: uniform
+  P20:
+    role: declared_stress_protocol_and_provisional_primary
+    alternatives: 20
+    distribution: strictly_past_popularity_weighted_without_replacement
+    smoothing_count: 1.0
+    popularity_exponent: 1.0
+  exclude_target: true
+  retain_repeat_items: true
+  exclude_future_positives: false
+  eligibility: training_defined_catalog_and_verified_query_time_availability
+  frozen_time_lag_if_snapshot_sampler_used: must_be_explicit_before_comparison
+  count_sensitivity:
+    alternatives: 100
+    role: bounded_development_sensitivity_only
+features:
+  preserve_original_nine_feature_anchor: true
+  relations: [user, item, user_item]
+  conditional_relation: user_artist
+  artist_information_available_to_all_competing_feature_methods: true
+  hard_window_days: [1, 7, 30, 90]
+  decay_half_life_days: [1, 7, 30, 90]
+  matched_representation_scales_days: [7, 30]
+  dictionary_feature_cap: 64
+  deduplicate_equivalent_features: true
+  freeze_multi_artist_and_missing_mapping_conventions: true
+  response_derived_weights: deferred_unless_availability_verified
+model:
+  family: retain_existing_pilot_estimator
+  settings: freeze_before_comparison
+  main_seed_count: 1
+  finalist_additional_seed_count: 2
+  exact_seed_values: populate_before_freeze
+search:
+  primary_protocol: P20
+  proposed: forward_group_augmentation_from_strong_manual_reference
+  max_augmentation_rounds: 3
+  candidate_fit_cap: 24
+  random_control: same_space_and_comparable_actual_fit_and_time_budget
+  selection_data: V_search
+  reporting_data: V_check_reused_development_not_pristine_test
+  no_dynamic_llm_calls: true
+resources:
+  default_total_wall_hours: 6
+  maximum_total_wall_hours_if_reporting_time_permits: 8
+  concurrent_jobs: 1
+  model_threads: 4
+  target_process_tree_rss_gib: 8
+  graceful_stop_process_tree_rss_gib: 10
+  minimum_system_available_memory_gib: 4
+  memory_guards: best_effort_monitored_not_os_enforced
+  stage_runtime_estimates: derive_from_local_calibration
+  finish_early_when_queue_complete: true
+priorities:
+  - id: preflight
+    order: 0
+    jobs: [protocol_checks, source_identity_once, sample_extraction, small_calibration]
+  - id: stronger_controls
+    order: 1
+    protocols: [U20, P20]
+    jobs: [random, popularity, frozen_recency_popularity_rule, personal_frequency, decay_popularity, original_gbdt, no_pair_gbdt]
+  - id: fixed_feature_comparisons
+    order: 2
+    protocols: [U20, P20]
+    jobs: [manual_without_artist, manual_with_artist_if_valid, hard_basis, decay_basis, full_dictionary]
+    deduplicate_identical_jobs: true
+  - id: bounded_search
+    order: 3
+    protocols: [P20]
+    jobs: [forward_group_augmentation, matched_random_search]
+  - id: finalist_stability
+    order: 4
+    jobs: [additional_model_seeds, candidate_count_sensitivity]
+  - id: optional_scale_check
+    order: 5
+    jobs: [frozen_methods_on_nested_secondary_panel]
+    run_only_if_calibrated_and_within_global_budget: true
+failure_policy:
+  block_dependent_jobs_on_protocol_failure: true
+  continue_independent_jobs_when_safe: true
+  bounded_retries: true
+  missing_metrics_are_not_zero: true
+  atomic_outputs_and_completion_markers: true
+  resume_completed_jobs: true
+  checkpoint_granularity: completed_stage_or_job_unless_estimator_supports_more
+journal:
+  append_major_decision_entries: true
+  automatic_run_ledger: true
+  retain_failed_skipped_and_blocked_runs: true
+  distinguish_planned_executed_and_reconstructed: true
+freeze_fields_to_populate:
+  - code_revision_and_dirty_state_hash
+  - dependency_environment
+  - source_and_sample_identities
+  - exact_chronological_boundaries
+  - V_search_and_V_check_boundaries
+  - query_and_candidate_hashes
+  - finalized_feature_manifest
+  - estimator_settings_and_seeds
+  - per_job_resource_caps
+  - artifact_paths
+  - timing_memory_measurement_methods
+

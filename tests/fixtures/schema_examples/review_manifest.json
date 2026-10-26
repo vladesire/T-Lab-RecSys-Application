@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "bundle_id": "review-fixture",
+  "bundle_kind": "review",
+  "status": "succeeded",
+  "created_at": "2026-10-25T00:00:00Z",
+  "files": [],
+  "metadata": {
+    "packet_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "author": "fixture",
+    "model": null,
+    "settings": {},
+    "response_path": "response.txt"
+  }
+}

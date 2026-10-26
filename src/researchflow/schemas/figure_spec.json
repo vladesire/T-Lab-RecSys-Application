@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+    },
+    "analysis_alias": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+    },
+    "kind": {
+      "enum": [
+        "metric_bars",
+        "comparison_intervals"
+      ]
+    },
+    "filters": {
+      "type": "object"
+    },
+    "order": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+      }
+    },
+    "title": {
+      "type": "string"
+    },
+    "ylabel": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "analysis_alias",
+    "kind",
+    "filters",
+    "order",
+    "title",
+    "ylabel"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://researchflow.local/v1/figure_spec.json"
+}

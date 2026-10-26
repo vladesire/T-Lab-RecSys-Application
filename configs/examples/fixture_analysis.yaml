@@ -1,0 +1,12 @@
+# smoke() pins the freshly executed run's actual ID and bundle path.
+schema_version: 1
+analysis_id: A-fixture
+engine: ranking
+inputs: []
+series:
+  - {id: A, run_id: R-fixture, prediction_id: A}
+  - {id: B, run_id: R-fixture, prediction_id: B}
+k: 2
+comparisons:
+  - {id: A-vs-B, left: A, right: B, metric: ndcg, weighting: event, subgroup: all}
+bootstrap: {replicates: 200, seed: 18, confidence: 0.95}

@@ -1,0 +1,20 @@
+{
+  "id": "main",
+  "analysis_alias": "main",
+  "kind": "metric_table",
+  "filters": {
+    "metric": "ndcg@2"
+  },
+  "columns": [
+    {
+      "field": "series_id",
+      "label": "Method"
+    },
+    {
+      "field": "value",
+      "label": "NDCG",
+      "digits": 4
+    }
+  ],
+  "caption": "Synthetic check"
+}

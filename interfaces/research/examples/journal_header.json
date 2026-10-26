@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "J-fixture",
+  "recorded_at": "2026-10-25T00:00:00Z",
+  "occurred_at": null,
+  "status": "prospective",
+  "branch_ids": [
+    "B-fixture"
+  ],
+  "hypothesis_ids": [
+    "H-fixture"
+  ],
+  "run_ids": [],
+  "analysis_ids": [],
+  "decision_ids": [],
+  "supersedes": [],
+  "author": "fixture",
+  "model": null
+}

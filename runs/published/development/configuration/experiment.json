@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "scientific": {
+    "experiment_id": "E-finish-study",
+    "branch_id": "B-finish-study",
+    "hypothesis_ids": [
+      "H-finish-compact",
+      "H-finish-decay",
+      "H-finish-repeat"
+    ],
+    "phase": "development",
+    "runner_id": "warmup",
+    "protocol": {
+      "id": "warmup-development-v1",
+      "candidates": [
+        "U20",
+        "P20"
+      ],
+      "history": "strict-past-complete",
+      "train_end_timestamp": 20800000,
+      "development_end_timestamp": 23400000,
+      "timestamp_unit": "seconds",
+      "final_test": "not-scored"
+    },
+    "parameters": {
+      "batch_phase": "overnight",
+      "controls_only": false,
+      "seed": 20261024,
+      "anchor_config_sha256": "544f12b2969c5eb660baba0485d5b0d447a3595903053283131d728dee595687",
+      "feature_manifest_sha256": "89bd117cefffe564d450b033f9c41e0637b03db998afa3efd3046cfae427361d",
+      "batch_config": {
+        "schema": "tlab-experiments-v1",
+        "threads": 4,
+        "data": null,
+        "wall_hours": 1.5,
+        "per_job_seconds": 2700,
+        "max_retries": 1,
+        "target_rss_gib": 8,
+        "stop_rss_gib": 10,
+        "minimum_available_gib": 4,
+        "low_memory_seconds": 10,
+        "maximum_selected_rows": 8000000,
+        "bootstrap_replicates": 1000,
+        "search_rounds": 1,
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_min_novel": 50,
+        "additional_model_seed_offsets": [],
+        "iteration1_output": "runs/iteration1",
+        "panels": {
+          "iteration1": {
+            "users": 100,
+            "train": 3000,
+            "development": 5000
+          },
+          "calibration": {
+            "users": 100,
+            "train": 300,
+            "development": 250
+          },
+          "main": {
+            "users": 1000,
+            "train": 30000,
+            "development": 20000
+          }
+        },
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation"
+      }
+    }
+  },
+  "runtime": {
+    "command": [
+      "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/.venv/bin/python",
+      "/tmp/tlab-deadline-compute-4639/runners/warmup/runner.py"
+    ],
+    "code_paths": [
+      "/tmp/tlab-deadline-compute-4639/runners/warmup/runner.py",
+      "/tmp/tlab-deadline-compute-4639/runners/warmup/bridge.py"
+    ],
+    "data_refs": [
+      {
+        "id": "source",
+        "local_path": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup",
+        "manifest": "/tmp/tlab-deadline-compute-4639/configs/completion/science/R-finish-search-isolated-001/source-manifest.json"
+      },
+      {
+        "id": "anchor",
+        "local_path": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+        "manifest": "/tmp/tlab-deadline-compute-4639/configs/completion/science/R-finish-search-isolated-001/anchor-manifest.json"
+      },
+      {
+        "id": "raw",
+        "local_path": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "manifest": "/tmp/tlab-deadline-compute-4639/configs/completion/science/R-finish-search-isolated-001/raw-manifest.json"
+      },
+      {
+        "id": "readiness",
+        "local_path": "/tmp/tlab-deadline-compute-4639/reproducibility/baseline-readiness.json",
+        "manifest": "/tmp/tlab-deadline-compute-4639/configs/completion/science/R-finish-search-isolated-001/readiness-manifest.json"
+      }
+    ],
+    "research_paths": [
+      "/tmp/tlab-deadline-compute-4639/research/hypotheses/H-finish-compact.json",
+      "/tmp/tlab-deadline-compute-4639/research/hypotheses/H-finish-decay.json",
+      "/tmp/tlab-deadline-compute-4639/research/hypotheses/H-finish-repeat.json",
+      "/tmp/tlab-deadline-compute-4639/research/branches/B-finish-repetition.json",
+      "/tmp/tlab-deadline-compute-4639/research/branches/B-finish-representations.json",
+      "/tmp/tlab-deadline-compute-4639/research/branches/B-finish-study.json",
+      "/tmp/tlab-deadline-compute-4639/research/decisions/D-finish-no-local-run.json",
+      "/tmp/tlab-deadline-compute-4639/research/decisions/D-finish-study-plan.json"
+    ],
+    "resources": {
+      "timeout_seconds": 5520,
+      "memory_limit_bytes": null
+    }
+  }
+}

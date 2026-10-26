@@ -1,0 +1,9 @@
+\section{Acceptance values and limitations}
+The generated event-weighted NDCG at two for A is \FixtureNDCG{}.
+The independent hand calculation is $(1+0+1)/3=2/3$.
+B has event mean $(1+2/\log_2 3)/3$. User weighting instead yields $3/4$
+for A and $(1+3/\log_2 3)/4$ for B. These values test aggregation semantics;
+they do not establish superiority of a recommendation method. Generated tables
+and figures below contain synthetic observations only. Compilation diagnostics
+and a separate human visual inspection are both required for Mac acceptance;
+a successful compile alone is not visual acceptance.

@@ -1,0 +1,28 @@
+# smoke() pins the newly generated analysis manifest fingerprint and metric pointer.
+schema_version: 1
+publication_id: P-fixture
+mode: draft
+source_dir: paper
+analyses: []
+artifacts:
+  tables:
+    - id: fixture-table
+      analysis_alias: fixture
+      kind: metric_table
+      filters: {metric: 'ndcg@2', weighting: event, subgroup: all}
+      columns:
+        - {field: series_id, label: Method}
+        - {field: value, label: 'NDCG@2', digits: 6}
+      caption: Synthetic infrastructure fixture only.
+  numbers:
+    - {name: FixtureNDCG, analysis_alias: fixture, pointer: /metrics/0/value, digits: 6}
+  figures:
+    - id: fixture-figure
+      analysis_alias: fixture
+      kind: metric_bars
+      filters: {metric: 'ndcg@2', weighting: event, subgroup: all}
+      order: [A, B]
+      title: Synthetic infrastructure fixture
+      ylabel: NDCG at 2
+required_comparison_ids: [A-vs-B]
+claims: []

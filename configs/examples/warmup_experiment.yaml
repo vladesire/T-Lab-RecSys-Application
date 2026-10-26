@@ -1,0 +1,70 @@
+# TEMPLATE ONLY: generate actual hashes/manifests using runners/warmup/README.md.
+# No placeholder here is actual provenance; ${...} is documentation, not expansion.
+schema_version: 1
+scientific:
+  experiment_id: E-warmup-anchor
+  branch_id: B-warmup-anchor
+  hypothesis_ids: []
+  phase: development
+  runner_id: warmup
+  protocol:
+    id: warmup-development-v1
+    candidates: [U20, P20]
+    history: strict-past-complete
+    train_end_timestamp: 20800000
+    development_end_timestamp: 23400000
+    timestamp_unit: seconds
+    final_test: not-scored
+  parameters:
+    batch_phase: iteration1
+    controls_only: false
+    seed: 20261024
+    anchor_config_sha256: '${CANONICAL_ARCHIVED_CONFIG_SHA256}'
+    feature_manifest_sha256: '${CANONICAL_FEATURE_MANIFEST_SHA256}'
+    batch_config:
+      schema: tlab-experiments-v1
+      threads: 4
+      data: null
+      wall_hours: 6
+      per_job_seconds: 2700
+      max_retries: 1
+      target_rss_gib: 8
+      stop_rss_gib: 10
+      minimum_available_gib: 4
+      low_memory_seconds: 10
+      maximum_selected_rows: 8000000
+      bootstrap_replicates: 2000
+      search_rounds: 3
+      search_fit_cap: 24
+      search_min_gain: 0.0001
+      search_min_queries: 200
+      search_min_users: 20
+      search_min_novel: 50
+      additional_model_seed_offsets: [11, 29]
+      iteration1_output: runs/iteration1
+      panels:
+        iteration1: {users: 100, train: 3000, development: 5000}
+        calibration: {users: 100, train: 300, development: 250}
+        main: {users: 1000, train: 30000, development: 20000}
+      optional_artist: blocked_pending_mapping_semantics_validation
+      optional_3000_user_panel: blocked_pending_secondary_scale_calibration
+      optional_100_alternatives: blocked_pending_variable_cardinality_validation
+runtime:
+  command:
+    - /absolute/warmup/.venv/bin/python
+    - /absolute/researchflow/runners/warmup/runner.py
+  code_paths:
+    - /absolute/researchflow/runners/warmup/runner.py
+    - /absolute/researchflow/runners/warmup/bridge.py
+  data_refs:
+    - id: source
+      manifest: /absolute/inputs/source-manifest.json
+      local_path: /absolute/warmup
+    - id: anchor
+      manifest: /absolute/inputs/anchor-manifest.json
+      local_path: /absolute/warmup/provenance/iteration0/results.tar.gz
+    - id: raw
+      manifest: /absolute/inputs/raw-manifest.json
+      local_path: /absolute/data/multi_event.parquet
+  research_paths: []
+  resources: {timeout_seconds: 23000, memory_limit_bytes: null}

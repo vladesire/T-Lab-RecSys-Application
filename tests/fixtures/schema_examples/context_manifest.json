@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "bundle_id": "context-fixture",
+  "bundle_kind": "context",
+  "status": "succeeded",
+  "created_at": "2026-10-25T00:00:00Z",
+  "files": [],
+  "metadata": {
+    "packet_id": "C-fixture",
+    "profile": "runner_author",
+    "source_fingerprints": [],
+    "included_bytes": 0,
+    "excluded": []
+  }
+}

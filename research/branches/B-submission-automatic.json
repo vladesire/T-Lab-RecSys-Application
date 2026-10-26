@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "B-submission-automatic",
+  "title": "Automatic temporal group selection and frozen holdout",
+  "purpose": "Evaluate bounded automatic groups against manual boosting; distinguish selection, check and final time intervals. One cohort, no independent-replication claim.",
+  "parent_id": "B-finish-study",
+  "hypothesis_ids": [
+    "H-submission-automatic"
+  ],
+  "planned_experiment_ids": [
+    "E-finish-study"
+  ],
+  "status": "closed",
+  "status_decision_id": "D-submission-results"
+}

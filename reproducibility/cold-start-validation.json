@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "purpose": "Prerequisite checkpoint from actual fresh vendored-engine baseline; not an independently observed sample",
+  "run_id": "R-baseline-20261025T173713Z-b753c781",
+  "anchor_prediction_max_absolute_difference": 1.1102230246251565e-16,
+  "phase": "development",
+  "test_scored": false,
+  "platform": "Linux x86_64",
+  "progress": "build/baseline-acceptance/coldstart-f953bf0aea2b/progress.json",
+  "installed_from_supplied_locks": true,
+  "pinned_raw_data_download_verified": true,
+  "synthetic_smoke_no_tex": "passed",
+  "actual_data_analysis_view_review_pdf": "passed",
+  "baseline_pdf_pages": 3,
+  "assistant_render_inspection": "All three pages rendered and inspected; no clipping/overlap observed. This is not the owner's visual acceptance.",
+  "fresh_checkout_with_spaces": {
+    "status": "passed",
+    "run_id": "R-baseline-20261025T175124Z-877aa49f",
+    "data": "Existing independently downloaded SHA256-verified raw file reused for this separate layout/venv check",
+    "platform": "Linux x86_64"
+  }
+}

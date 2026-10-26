@@ -1,0 +1,25 @@
+{
+  "alternatives": [
+    "Treat successful execution alone as sufficient; rejected because numerical and delivery checks are separate."
+  ],
+  "author": "AI-assisted acceptance workflow",
+  "branch_ids": [
+    "B-warmup-anchor"
+  ],
+  "evidence": [
+    "runs/R-baseline-20261025T173713Z-b753c781/manifest.json",
+    "analyses/A-baseline-coldstart-f953bf0aea2b-3766dc542739d101bdb8226a/analysis.json"
+  ],
+  "hypothesis_ids": [],
+  "id": "D-baseline-coldstart-f953bf0aea2b",
+  "judgment": "Fresh baseline execution passed its anchor criterion (max absolute difference 1.11022e-16); analysis validates ten development controls. This is reproduction, not additional independent evidence.",
+  "model": null,
+  "next_actions": [
+    "Inspect the acceptance PDF",
+    "Freeze supported scientific scope before new experiments"
+  ],
+  "recorded_at": "2026-10-25T17:40:01.931110+00:00",
+  "schema_version": 1,
+  "status": "retrospective",
+  "supersedes": []
+}

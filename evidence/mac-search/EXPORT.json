@@ -1,0 +1,9 @@
+{
+  "kind": "selected_owner_mac_analysis_export",
+  "source_archive_sha256": "be22ef8620aa510178b80ea1a822ecc5cbf54f7b02f040744c43495e08a89521",
+  "source_manifest_sha256": "3c0ad1614795d5b8c168d3ae5f4195d43cd9600d4c99c03d3a6ca6e9e50049bb",
+  "complete_source_analysis_inventory_verified": true,
+  "metric_cells": 288,
+  "max_absolute_common_metric_difference_from_linux": 0.0,
+  "note": "Selected JSON export, not complete bundle. Mac and Linux reproduce the same cohort; not independent samples."
+}

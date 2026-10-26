@@ -1,0 +1,12 @@
+{
+  "id": "fixturetable",
+  "kind": "table",
+  "path": "fixturetable.tex",
+  "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "evidence": [
+    {
+      "analysis_id": "A-fixture",
+      "pointer": "/metrics/0"
+    }
+  ]
+}

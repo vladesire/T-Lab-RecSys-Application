@@ -1,0 +1,40 @@
+{
+  "protocol_version": 1,
+  "source": {
+    "repository": "yandex/yambda",
+    "revision": "dd6f3a19eef5866e346c3270e098baa641a44948",
+    "file": "flat/50m/multi_event.parquet",
+    "bytes": 384465869,
+    "sha256": "b92f6c97277a554c8a7d6cfea900eca51639fd53a3e6c4fa58b82e35fd35804d",
+    "timestamp_seconds_per_unit": 1,
+    "timestamp_quantization_seconds": 5,
+    "synthetic": false
+  },
+  "seed": 20261024,
+  "users": 100,
+  "train_fraction_of_global_time_span": 0.8,
+  "development_end_fraction_of_global_time_span": 0.9,
+  "train_end_timestamp": null,
+  "development_end_timestamp": null,
+  "target_event_type": "listen",
+  "minimum_prior_user_events": 5,
+  "training_queries": 3000,
+  "development_queries": 1000,
+  "alternatives": 20,
+  "window_seconds": 604800,
+  "ratio_smoothing": 1.0,
+  "threads": 2,
+  "acquisition_seconds": 900,
+  "maximum_download_bytes": 500000000,
+  "maximum_selected_rows": 3000000,
+  "run_no_pair_ablation": false,
+  "model": {
+    "learning_rate": 0.08,
+    "max_iter": 80,
+    "max_leaf_nodes": 15,
+    "max_depth": 4,
+    "min_samples_leaf": 30,
+    "l2_regularization": 1.0,
+    "early_stopping": false
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "kind": "ranking",
+  "predictions": [
+    {
+      "id": "A-p",
+      "method_id": "A",
+      "protocol_id": "P-fixture",
+      "split": "development",
+      "format": "ranking_npz_v1",
+      "path": "A.npz",
+      "feature_count": 0,
+      "identity": {
+        "protocol_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "query_set_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "candidate_set_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "metrics": [],
+  "coverage": [],
+  "costs": [],
+  "checks": {
+    "passed": true,
+    "items": [
+      {
+        "id": "fixture",
+        "status": "passed",
+        "detail": "Synthetic infrastructure example, not research evidence.",
+        "evidence": []
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic fixture; zero fingerprints below are schema examples, not real hashes."
+  ],
+  "artifacts": [
+    {
+      "path": "A.npz",
+      "kind": "predictions",
+      "description": "Numeric fixture"
+    }
+  ]
+}

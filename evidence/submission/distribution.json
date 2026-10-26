@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "filename": "tlab-submission-analysis.tar.xz",
+  "sha256": "28b7954b4a13ecd8bfe3907f44a0b9ac81b19182af0ead5502344fb99b51ddfe",
+  "size_bytes": 3655384,
+  "analysis_path": "analyses/A-finish-submission-search-001-4f48b8bc01546588c19d1c54",
+  "manifest_sha256": "ffe1f7a878c69fdf3cb40c72036a66f5d9834089faf255cea5dae4827d80b8f2",
+  "uncompressed_bytes": 177455197,
+  "download_url": null,
+  "note": "Complete development analysis included in this repository.",
+  "repository_path": "runs/published/development/analysis.tar.xz"
+}

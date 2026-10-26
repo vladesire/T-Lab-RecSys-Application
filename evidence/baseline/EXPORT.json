@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "kind": "selected_evidence_export",
+  "is_complete_run_bundle": false,
+  "source_run_id": "R-warmup-anchor-001",
+  "assets": [
+    {
+      "path": "evidence/baseline/original-progress.json",
+      "sha256": "d9634202101022791e12355c9deca6b37b67c2a3ecca0e2d66094dcc66955aee",
+      "size_bytes": 638
+    },
+    {
+      "path": "evidence/baseline/analysis.source-manifest.json",
+      "sha256": "36b2545d395b427278a96b7b33223dcea29313484aa6f11b0bc309769336e00c",
+      "size_bytes": 3264
+    },
+    {
+      "path": "evidence/baseline/runner-result.json",
+      "sha256": "0affc0b5e6c3b85797ee97bd2bd649a9690430ff7b58d99bf9e2639a47b164d8",
+      "size_bytes": 33972
+    },
+    {
+      "path": "evidence/baseline/analysis.json",
+      "sha256": "a7a9083150c3114a114f558650ee921646b6b4e10758c1325fdc4a0c0d275c7c",
+      "size_bytes": 79304
+    },
+    {
+      "path": "evidence/baseline/run.source-manifest.json",
+      "sha256": "c44b425ee16a134ff62c007928d64bf9991025f8e08d5e1d27f6ef71553ec17f",
+      "size_bytes": 31560
+    },
+    {
+      "path": "evidence/baseline/operational-view/view.md",
+      "sha256": "3da4708c62a2e12b8750188d61ab09cf36240d61825e3f04632093357fe6c744",
+      "size_bytes": 20197
+    },
+    {
+      "path": "evidence/baseline/operational-view/view.json",
+      "sha256": "fb5d5494bd2d852d5934be5a1f56ee4807f86e1ec760ac3b63daf67e56faa5d6",
+      "size_bytes": 113633
+    },
+    {
+      "path": "evidence/baseline/original-configurations/publication.json",
+      "sha256": "3445879e48d6d5000413260c78809f0c67ea3a22e38de04ae1350f4d31c78a2c",
+      "size_bytes": 2472
+    },
+    {
+      "path": "evidence/baseline/original-configurations/review.json",
+      "sha256": "b006187a44893d3f4815cb4020f5b599b975e8d12ffbe677eeb7b33c532be431",
+      "size_bytes": 823
+    },
+    {
+      "path": "evidence/baseline/original-configurations/view.json",
+      "sha256": "227fd6bdae9824ff3139c60171c8e2c53421a20847ebf377f224c4929fa3bab2",
+      "size_bytes": 307
+    },
+    {
+      "path": "evidence/baseline/original-configurations/analysis.json",
+      "sha256": "d5789692de028a18f57067514a9d3206939237a274bf08d73184f47e0956a236",
+      "size_bytes": 3490
+    }
+  ],
+  "note": "Original source manifests are retained as evidence; their absent original paths are not claimed present here."
+}

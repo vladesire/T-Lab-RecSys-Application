@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tlab-researchflow"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2,<3", "PyYAML>=6,<7", "jsonschema>=4.23,<5", "matplotlib>=3.9,<4", "psutil>=6,<8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+researchflow = "researchflow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+researchflow = ["schemas/*.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"

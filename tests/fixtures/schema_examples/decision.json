@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "D-fixture",
+  "branch_ids": [
+    "B-fixture"
+  ],
+  "hypothesis_ids": [
+    "H-fixture"
+  ],
+  "recorded_at": "2026-10-25T00:00:00Z",
+  "status": "prospective",
+  "judgment": "Fixture example only, not an actual historical decision.",
+  "evidence": [],
+  "alternatives": [],
+  "next_actions": [],
+  "supersedes": [],
+  "author": "fixture",
+  "model": null
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mainfig",
+  "analysis_alias": "main",
+  "kind": "metric_bars",
+  "filters": {
+    "metric": "ndcg@2"
+  },
+  "order": [
+    "A"
+  ],
+  "title": "Synthetic fixture",
+  "ylabel": "NDCG@2"
+}

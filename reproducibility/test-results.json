@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "platform": "Linux x86_64",
+  "python": "3.12.14",
+  "checks": [
+    {
+      "command": "RESEARCHFLOW_REAL_TEX=1 M19_WARMUP_PROJECT=engines/tlab_warmup .venv/bin/python -m pytest tests -q",
+      "passed": 775,
+      "failed": 0,
+      "skipped": 0,
+      "elapsed_seconds": 70.68
+    },
+    {
+      "command": "engine .venv/bin/python -B -m unittest discover -s tests -q",
+      "cwd": "engines/tlab_warmup",
+      "passed": 30,
+      "failed": 0
+    }
+  ],
+  "warning": "Focused suites described elsewhere overlap these totals."
+}

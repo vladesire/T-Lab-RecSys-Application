@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "bundle_id": "release-fixture",
+  "bundle_kind": "release",
+  "status": "succeeded",
+  "created_at": "2026-10-25T00:00:00Z",
+  "files": [],
+  "metadata": {
+    "snapshot_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "compiled_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "archive_path": "release.tar.gz",
+    "external_dependencies": [],
+    "visual_review": {}
+  }
+}

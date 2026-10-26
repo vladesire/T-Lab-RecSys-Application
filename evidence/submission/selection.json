@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "author": "Vladislav Neklydov",
+  "study_path": "evidence/submission/study.json",
+  "final_path": "evidence/submission/final.json",
+  "analysis_path": "analyses/A-finish-submission-search-001-4f48b8bc01546588c19d1c54",
+  "selected_files": [
+    {
+      "path": "evidence/submission/study.json",
+      "sha256": "eaf4f350c46da072074f3e6f73d091f65e381dd3b060efc9e01c7333b2887383"
+    },
+    {
+      "path": "evidence/submission/final.json",
+      "sha256": "599893d2ae9e0437415cb9b095721a5c424a391111f81ebd989d6ae0b2455594"
+    },
+    {
+      "path": "evidence/submission/freeze.json",
+      "sha256": "96c3d24f322623ce63e68ba785abc99fbe09b7924098ad9801836279498b51a1"
+    },
+    {
+      "path": "evidence/submission/analysis.source-manifest.json",
+      "sha256": "ffe1f7a878c69fdf3cb40c72036a66f5d9834089faf255cea5dae4827d80b8f2"
+    }
+  ]
+}

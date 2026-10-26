@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "note": "Vendored small scientific source, configs, tests and lock bytes equal the supplied source. Paths/layout changed; scientific computation was not rewritten.",
+  "files": [
+    {
+      "path": "configs/experiments.json",
+      "sha256": "91161b8f7936e2e9ee77822b743bb6811e8c3a4b9ccfc97f63118611578817e3"
+    },
+    {
+      "path": "configs/warmup.json",
+      "sha256": "9f4667ff870ec31560e2d16bc20c1748e102661100074b60b3392f4d89555fda"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "4f84774840e4fd05f73c2ebfd6be636f3e7282209f3e5d12e6181b5bd4e477d2"
+    },
+    {
+      "path": "src/tlab_warmup/__init__.py",
+      "sha256": "5a773b8a336b5314b4bea84a6f45fc411d12fe188f577b353dfff9d755c6ee50"
+    },
+    {
+      "path": "src/tlab_warmup/batch.py",
+      "sha256": "2ddb920cd9f6a65447e12d6dd4abd4dd548c14bdbf6112394004f796435c00b1"
+    },
+    {
+      "path": "src/tlab_warmup/core.py",
+      "sha256": "557a479512dffc738e78afa784e224ebcf48626f9564854ab713b4ba13f7139f"
+    },
+    {
+      "path": "src/tlab_warmup/data.py",
+      "sha256": "540f851202953a0b8dcd30f25f78fd9580ce1d4a69ad758366b987e60638b8af"
+    },
+    {
+      "path": "src/tlab_warmup/evaluation.py",
+      "sha256": "a52b5dba8a1928f18c2a9913645eeb41a990134d07c83b5f7b021034b1eda4cf"
+    },
+    {
+      "path": "src/tlab_warmup/experiment_io.py",
+      "sha256": "6c854bf8964aa2868d03f8573f0866c3098f9b1e5aa023ccc54250fc9e92212b"
+    },
+    {
+      "path": "src/tlab_warmup/experiment_jobs.py",
+      "sha256": "bd7853df8396aed36864ac687fd44f9b6ff5eb77894c8779a58a16ca5be12f45"
+    },
+    {
+      "path": "src/tlab_warmup/pipeline.py",
+      "sha256": "5f1093885146302c2c5e825b25716b982caad4528967fdaaad4b77741060e965"
+    },
+    {
+      "path": "src/tlab_warmup/representations.py",
+      "sha256": "ebfed140421d1ed598b56f178394bc6218f6af53b47de46d957a314441b90719"
+    },
+    {
+      "path": "src/tlab_warmup/sampling.py",
+      "sha256": "ff7eec67c6a3398724daf033f2e85b9b7502f3364dbc29045303cdeaeb210820"
+    },
+    {
+      "path": "tests/fixture.py",
+      "sha256": "27dd3e29b0ba86e85a69e69cf03bc66b95b2292f42bab18bb9602dc91288731f"
+    },
+    {
+      "path": "tests/test_acquisition.py",
+      "sha256": "e4d14e4c23fd84789c775ebff82a191c2f615a6d473222cc58bbec88109d16ef"
+    },
+    {
+      "path": "tests/test_core.py",
+      "sha256": "5ce8888f64159e3db0e81f0d0065d97959348c2e50831fd6ce12f53f07817d48"
+    },
+    {
+      "path": "tests/test_experiments.py",
+      "sha256": "afdc82a5763d689932c87fa6a71611dd0906cfc1b0197d5d2522c8ef9d57bfb9"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "sha256": "6ba6a72099e43abab25116675c1c48d316e42988fe638a0386c536daa7a31209"
+    },
+    {
+      "path": "tests/test_runner.py",
+      "sha256": "b8a16159517f1715ef463ba45911467aca5d51e55684115a4baef2517780e06c"
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "4dec04a1396748a75ddf325917292b06cb873b38e70eaadeef4d86e9c416d4cf"
+    }
+  ]
+}

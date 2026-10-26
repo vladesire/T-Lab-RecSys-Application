@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "H-submission-automatic",
+  "branch_ids": [
+    "B-submission-automatic"
+  ],
+  "question": "Does one-step temporal group selection preserve or improve P20 ranking relative to the 17-feature manual boosting baseline on a subsequently frozen temporal holdout?",
+  "rationale": "Pilot-informed comparison added to satisfy the central assignment criterion. Development fixed-representation results have been inspected; final outcomes have not been computed by this stage.",
+  "estimand": {
+    "metric": "ndcg@10",
+    "weighting": "event",
+    "primary_protocol": "P20",
+    "sensitivity_protocol": "U20",
+    "split": "test",
+    "interval": "95% paired percentile user-cluster bootstrap, 1000 replicates",
+    "information_boundary": "Strictly earlier recorded events, including earlier holdout events; no target/equal-time inclusion",
+    "evidence_boundary": "One development-adaptive study with subsequent holdout; no preregistration or independent cohort claim"
+  },
+  "comparison": {
+    "left": "forward",
+    "right": "manual",
+    "difference": "forward-minus-manual",
+    "subgroup": "all"
+  },
+  "decision_rule": {
+    "practical_tolerance": 0.005,
+    "interpretation": "Report estimate and interval; positive lower limit supports gain on this holdout, lower limit above -0.005 supports the chosen limited tolerance. Otherwise inconclusive or a measured loss. Do not select winners after inspecting test.",
+    "cost_boundary": "Search candidate fits, finalist fitting/application, materialization and sampled process RSS distinguished."
+  },
+  "references": [
+    "research/decisions/D-submission-final-plan.json"
+  ],
+  "created_at": "2026-10-25T20:15:53.111591+00:00"
+}

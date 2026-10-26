@@ -1,0 +1,8 @@
+{
+  "completed": "2026-10-25T20:18:46.954324+00:00",
+  "request_hash": "10dc1a2a83a0da5f152b6f01cd8721d2b80032067becc7333eda505db1d40ba9",
+  "files": {
+    "predictions.npz": "fd14de1aedc110804f13675cb35dcf39e014f2f412f4340896ba8af954e836b9",
+    "result.json": "5875d771eeb1b4b45d88549166fbdace6fd5b6187387aaafccc8314fa0f6e1f1"
+  }
+}

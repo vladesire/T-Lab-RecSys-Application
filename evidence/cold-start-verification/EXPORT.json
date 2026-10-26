@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "kind": "verification_export",
+  "is_complete_run_bundle": false,
+  "scope": "Fresh Linux reproduction of the same anchored sample; not additional independent statistical evidence.",
+  "record": "../../reproducibility/cold-start-validation.json"
+}

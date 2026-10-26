@@ -1,0 +1,708 @@
+{
+  "schema_version": 1,
+  "kind": "published_run_exports",
+  "additional_analyses": [
+    {
+      "archive_path": "mac/analysis.tar.xz",
+      "bundle_id": "A-finish-search-001-fb4c7e0bdcdce6e35b83b6b1",
+      "manifest_sha256": "3c0ad1614795d5b8c168d3ae5f4195d43cd9600d4c99c03d3a6ca6e9e50049bb"
+    }
+  ],
+  "files": [
+    {
+      "path": "development/CHECKS_PASSED.json",
+      "size_bytes": 132,
+      "sha256": "8bb0c48d634c36de0fd85f74404a5e7eb4247b6d8e5b0f0d8b1417a983e97173"
+    },
+    {
+      "path": "development/analysis.tar.xz",
+      "size_bytes": 3655384,
+      "sha256": "28b7954b4a13ecd8bfe3907f44a0b9ac81b19182af0ead5502344fb99b51ddfe"
+    },
+    {
+      "path": "development/configuration/anchor-manifest.json",
+      "size_bytes": 113,
+      "sha256": "97eea0335b0b311a820ce9ac5249739359e9d5187ff394424070fb1e442bd9bc"
+    },
+    {
+      "path": "development/configuration/experiment.json",
+      "size_bytes": 4506,
+      "sha256": "6ca77df4a1dfc824339d2a8bc6f3643b109d7213d5baf2bcc3c3c9b9242ad855"
+    },
+    {
+      "path": "development/configuration/raw-manifest.json",
+      "size_bytes": 110,
+      "sha256": "423ec8b490d6d1e696daceebed2d02ec5737447447745739ce0bdc7e0a024c4c"
+    },
+    {
+      "path": "development/configuration/readiness-manifest.json",
+      "size_bytes": 116,
+      "sha256": "5793a134495525f4d6e04bf2ba225d4defb2bd2cce815317a33cafa3a5381863"
+    },
+    {
+      "path": "development/configuration/source-manifest.json",
+      "size_bytes": 9912,
+      "sha256": "23425edb20bd6eb2d166259c7a6e1aa88d42dd79bb456f6f592dfedfffbefa57"
+    },
+    {
+      "path": "development/frozen_manifest.json",
+      "size_bytes": 87114,
+      "sha256": "9ea96d47e1f99a1761c4e780a767cef6bff76e21b442bc5fc7d80abacbcbcd98"
+    },
+    {
+      "path": "development/ledger.json",
+      "size_bytes": 134530,
+      "sha256": "ac01665204001a6a4ac4e7ac72dc95e8c80b48929abdfda842a062c8210eb700"
+    },
+    {
+      "path": "development/native-records/freezes/P20_all.json",
+      "size_bytes": 87114,
+      "sha256": "6239ddf80c070e2d99f3030f640dd7facabebd7a701838b678f43a7c69315d99"
+    },
+    {
+      "path": "development/native-records/freezes/P20_decay.json",
+      "size_bytes": 87114,
+      "sha256": "5abd237dc8ac47ac1f22ee28f65a1c53433baf6776e1f900ad9ae6694651e6d7"
+    },
+    {
+      "path": "development/native-records/freezes/P20_decay_popularity.json",
+      "size_bytes": 87114,
+      "sha256": "418d6cacb3a75392417761fb535775aecb34c91cc2ee382616fe8fd2f86ff1e2"
+    },
+    {
+      "path": "development/native-records/freezes/P20_forward.json",
+      "size_bytes": 87114,
+      "sha256": "67a064398d7526737f0371f0f6729d062181bc67c15497add8a74211d5aa4809"
+    },
+    {
+      "path": "development/native-records/freezes/P20_manual.json",
+      "size_bytes": 87114,
+      "sha256": "9d22795a06af4e04a321d20df0c184f66a1e0b91dee50ff3524a8af771cfef46"
+    },
+    {
+      "path": "development/native-records/freezes/P20_no_pair.json",
+      "size_bytes": 87114,
+      "sha256": "498b85c71b42769b5f8252906ce2f5e4e6f3ba85321bf0f1b838938aebee827f"
+    },
+    {
+      "path": "development/native-records/freezes/P20_original.json",
+      "size_bytes": 87114,
+      "sha256": "155525d51fb5c2afdf8cde3620d7cfb78d01c37645777dab9395c99a5dadcbb0"
+    },
+    {
+      "path": "development/native-records/freezes/P20_personal_frequency.json",
+      "size_bytes": 87114,
+      "sha256": "18508391ec77e65a15a3f0bb00c7570d26b2215728a70b8bf95a8301af05b2ae"
+    },
+    {
+      "path": "development/native-records/freezes/P20_popularity.json",
+      "size_bytes": 87114,
+      "sha256": "f4e6634443323ec51611701aa5d0ef6cd01f3ae14b790b52254511a43de7fe10"
+    },
+    {
+      "path": "development/native-records/freezes/P20_random.json",
+      "size_bytes": 87114,
+      "sha256": "b256caf2bccceb980d16c787ba4cb9395d0d0ce5a1f1dd7d6ca0fcb4fba6a196"
+    },
+    {
+      "path": "development/native-records/freezes/P20_random_search.json",
+      "size_bytes": 87114,
+      "sha256": "dafe917c28fb1ab23e293c78aea8e6ebc3c2c4e4cf3df158323a34fcb754e6b7"
+    },
+    {
+      "path": "development/native-records/freezes/P20_recency_rule.json",
+      "size_bytes": 87114,
+      "sha256": "4d3ae181bb6e67356d155cdd032f31ff5e3fca4145b7bad74ec7fc180a5059e8"
+    },
+    {
+      "path": "development/native-records/freezes/U20_all.json",
+      "size_bytes": 87114,
+      "sha256": "b8572c126de8a824d30c8e9b675de767fb7dcb96c504b306a415a0b1990ab77f"
+    },
+    {
+      "path": "development/native-records/freezes/U20_decay.json",
+      "size_bytes": 87114,
+      "sha256": "7fbce753e1ea383fbe2a3588d8d9f96c99c1af6beccafea786a1623f68669883"
+    },
+    {
+      "path": "development/native-records/freezes/U20_decay_popularity.json",
+      "size_bytes": 87114,
+      "sha256": "12a061bff3ae67b53ad5ab2e232b1142643e77d08e058d41bf4b10cf28ad1cf9"
+    },
+    {
+      "path": "development/native-records/freezes/U20_forward_frozen.json",
+      "size_bytes": 87114,
+      "sha256": "2ce20cbedbb1ced40f3bbac255c7076a04c665c287d5dfdd9ef92e70799cabf5"
+    },
+    {
+      "path": "development/native-records/freezes/U20_manual.json",
+      "size_bytes": 87114,
+      "sha256": "746eda0e2815b5390e4e8615b7b16e5ba6a2dbf96c80683342f4f96c5543f779"
+    },
+    {
+      "path": "development/native-records/freezes/U20_no_pair.json",
+      "size_bytes": 87114,
+      "sha256": "800dc719d7ad6b2a28673abb15539a5204d35107caf52ac6a1df86e8880d56d8"
+    },
+    {
+      "path": "development/native-records/freezes/U20_original.json",
+      "size_bytes": 87114,
+      "sha256": "cadbde5961a2f6e56bece14c0276c60ae93ed50f75cff01d0d9283a7d116e7b5"
+    },
+    {
+      "path": "development/native-records/freezes/U20_personal_frequency.json",
+      "size_bytes": 87114,
+      "sha256": "873a90f9b4f80e7872502839406a8c66475ad2bd6ff36c2aea90d035ac355ec1"
+    },
+    {
+      "path": "development/native-records/freezes/U20_popularity.json",
+      "size_bytes": 87114,
+      "sha256": "46b388864f284b4b9c6d9b8a4f85f8900942b1f498b869f5231a61ea2c758e7f"
+    },
+    {
+      "path": "development/native-records/freezes/U20_random.json",
+      "size_bytes": 87114,
+      "sha256": "2485e572a08dacc0a541c47162ea0267f9c305bfa1d77ca290d305f2bfe20a2e"
+    },
+    {
+      "path": "development/native-records/freezes/U20_random_search_frozen.json",
+      "size_bytes": 87114,
+      "sha256": "9ea96d47e1f99a1761c4e780a767cef6bff76e21b442bc5fc7d80abacbcbcd98"
+    },
+    {
+      "path": "development/native-records/freezes/U20_recency_rule.json",
+      "size_bytes": 87114,
+      "sha256": "354a55177a64117900f500101002e3fb36714479c50e324ffd3ad5f03a1e39c7"
+    },
+    {
+      "path": "development/native-records/freezes/calibration_fit.json",
+      "size_bytes": 25314,
+      "sha256": "a95ccba4e1bf76e916402f25571e0a8d433b4149e44f6c335b57c15a44684b3f"
+    },
+    {
+      "path": "development/native-records/jobs/P20_all/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "c77b5f52a34d5769b61baacd8b683bc0e3fb00087c5fcb30ab6be75755eb9d99"
+    },
+    {
+      "path": "development/native-records/jobs/P20_all/result.json",
+      "size_bytes": 4062,
+      "sha256": "56dffe07acfd6cbd4ee95a2453bc598d4e1de1b0511ee78ba68fec8c2c80a566"
+    },
+    {
+      "path": "development/native-records/jobs/P20_decay/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "14e7f3aafb0489b29340449132e409bc974a3c6e194b8f1588128a0235061f3b"
+    },
+    {
+      "path": "development/native-records/jobs/P20_decay/result.json",
+      "size_bytes": 3336,
+      "sha256": "0b3a45d2ec9872adc3e7f2e1626703c467eb0bc82f3dc28662d396a1679bd547"
+    },
+    {
+      "path": "development/native-records/jobs/P20_decay_popularity/COMPLETE.json",
+      "size_bytes": 335,
+      "sha256": "4994a5b71c964703b758ade88df42b18db2f58c448e34c4937b3fdce46944997"
+    },
+    {
+      "path": "development/native-records/jobs/P20_decay_popularity/result.json",
+      "size_bytes": 2860,
+      "sha256": "5875d771eeb1b4b45d88549166fbdace6fd5b6187387aaafccc8314fa0f6e1f1"
+    },
+    {
+      "path": "development/native-records/jobs/P20_forward/COMPLETE.json",
+      "size_bytes": 510,
+      "sha256": "271fd174107cdde5a0fa3d0416173a536f31f1ddf9971046b03712b67e5bb789"
+    },
+    {
+      "path": "development/native-records/jobs/P20_forward/result.json",
+      "size_bytes": 3671,
+      "sha256": "7e355ec6feccc462b2d8d4ee473595a68809a75e0744370fccf6243c48ee4136"
+    },
+    {
+      "path": "development/native-records/jobs/P20_forward/trials.json",
+      "size_bytes": 5146,
+      "sha256": "a07400549d3ccb74725b66d64a23917d177948d5691f50c0b00f58120a1fe668"
+    },
+    {
+      "path": "development/native-records/jobs/P20_manual/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "3599d3cd9433f2b924e3f8053a27a2b8c7a56eef21f07da263b20865abe19a0e"
+    },
+    {
+      "path": "development/native-records/jobs/P20_manual/result.json",
+      "size_bytes": 3326,
+      "sha256": "2057a351c5ce87f8e3f2a4b9ab01b22b715691e84a7e6405f8fdab424ac1b6cf"
+    },
+    {
+      "path": "development/native-records/jobs/P20_no_pair/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "b2a8fa6f3edfbeb6ac23a6c85b4493c9aa6016a11c18cebcc05110acf2891ab7"
+    },
+    {
+      "path": "development/native-records/jobs/P20_no_pair/result.json",
+      "size_bytes": 3136,
+      "sha256": "6d906f2e130cff083d9be2b53544f003ef33dc52e19d70a64f6b930b8d0d0ee3"
+    },
+    {
+      "path": "development/native-records/jobs/P20_original/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "6cf59b9c1effa89786b56c93d3610b3fea72edd35d7eba47077c74b253f0deef"
+    },
+    {
+      "path": "development/native-records/jobs/P20_original/result.json",
+      "size_bytes": 3116,
+      "sha256": "fe0e5846e22c22bcdddbf6210e9384806c3047d464a36e016a73f150cb07fcff"
+    },
+    {
+      "path": "development/native-records/jobs/P20_personal_frequency/COMPLETE.json",
+      "size_bytes": 335,
+      "sha256": "ae9b6c6642ac58edbdabd49de3e68299172de2fb3665cb97b0c6773c530fa846"
+    },
+    {
+      "path": "development/native-records/jobs/P20_personal_frequency/result.json",
+      "size_bytes": 2777,
+      "sha256": "b50102576fb1d8790a7f46a6dc5c0833702a3f9b0457cfbf302e8922d6fcec24"
+    },
+    {
+      "path": "development/native-records/jobs/P20_popularity/COMPLETE.json",
+      "size_bytes": 335,
+      "sha256": "cdce35a96741d8e247f6ae2868cab44f18d26f0ba5350b1d5c97eb5138931130"
+    },
+    {
+      "path": "development/native-records/jobs/P20_popularity/result.json",
+      "size_bytes": 2870,
+      "sha256": "b28a1a3617dc4cb547256c29bb70d040776e0be17ef93b688f885c4408e7132a"
+    },
+    {
+      "path": "development/native-records/jobs/P20_random/COMPLETE.json",
+      "size_bytes": 335,
+      "sha256": "9c5df11cfd9b0b3ab1f4f168e37f97a6584dd7cc9fc0384f0abf6c891c3553ce"
+    },
+    {
+      "path": "development/native-records/jobs/P20_random/result.json",
+      "size_bytes": 3126,
+      "sha256": "385c9e3c95a3bba6c8a6379a43e896b7930613110559c465ff1b09041f927ee1"
+    },
+    {
+      "path": "development/native-records/jobs/P20_random_search/COMPLETE.json",
+      "size_bytes": 510,
+      "sha256": "4ba7975d8ab2bfb700c11dc86d54172b140c7bda2cfdc9b04eaf40e9dd6c541f"
+    },
+    {
+      "path": "development/native-records/jobs/P20_random_search/result.json",
+      "size_bytes": 3676,
+      "sha256": "ec5f02fde79e135f6cc1a9614373704a6862bf77b7b20e2207cee6fa1ba59541"
+    },
+    {
+      "path": "development/native-records/jobs/P20_random_search/trials.json",
+      "size_bytes": 5149,
+      "sha256": "b8aff19143d21614c9955aebfbbbef59c6e20b191f768550dc33797f5bbd5fed"
+    },
+    {
+      "path": "development/native-records/jobs/P20_recency_rule/COMPLETE.json",
+      "size_bytes": 335,
+      "sha256": "ac2d904a19291c4afd32cdbdf6fd56898756994cd1949d7886ffa4821dfb2317"
+    },
+    {
+      "path": "development/native-records/jobs/P20_recency_rule/result.json",
+      "size_bytes": 2763,
+      "sha256": "d40b8229d738f45392b1dc89196f8da651ec83f2c3e58244ee7fd40fe4eb3b30"
+    },
+    {
+      "path": "development/native-records/jobs/U20_all/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "6b09e75b7a6e7d88687b899a1319c1b08d5adfa95a9976c11a87b91cf46ecf70"
+    },
+    {
+      "path": "development/native-records/jobs/U20_all/result.json",
+      "size_bytes": 4058,
+      "sha256": "29aaaee684d143235bc21386769a1994656e27fa3f850a5ffcc10084a1a47917"
+    },
+    {
+      "path": "development/native-records/jobs/U20_decay/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "314faf1f93a393f5c37b2776968bac9d92f05af1ac424781d27c9c9e81913832"
+    },
+    {
+      "path": "development/native-records/jobs/U20_decay/result.json",
+      "size_bytes": 3318,
+      "sha256": "1215580c4d1c684264169d41c6603e2b53c6cddf83583f14ca099a27ad878cee"
+    },
+    {
+      "path": "development/native-records/jobs/U20_decay_popularity/COMPLETE.json",
+      "size_bytes": 335,
+      "sha256": "e234e4eec8eed193e0db85e28a4ae2edb185eb24b98a4606517c00d85d645fce"
+    },
+    {
+      "path": "development/native-records/jobs/U20_decay_popularity/result.json",
+      "size_bytes": 2855,
+      "sha256": "c5a737d0b3de540696f3d5b4348de686f5e63879832a6abab8c5dead5e6ab163"
+    },
+    {
+      "path": "development/native-records/jobs/U20_forward_frozen/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "0a0ad609e49cb4aba3bc4c817c46b46c0d405ff7643e49781288674aab3427c6"
+    },
+    {
+      "path": "development/native-records/jobs/U20_forward_frozen/result.json",
+      "size_bytes": 3555,
+      "sha256": "746ee535b08bf264dd53348f0aa6581bebf80823ab7345a23bda9c54e1d9a2ca"
+    },
+    {
+      "path": "development/native-records/jobs/U20_manual/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "9409e26fe505039019196dd307e0000db724eb1208f4a2c245dc79500793a9ba"
+    },
+    {
+      "path": "development/native-records/jobs/U20_manual/result.json",
+      "size_bytes": 3323,
+      "sha256": "5d8028a0848c482f99394a6410e3d620f8a08eacaca5c64c7043a63758825287"
+    },
+    {
+      "path": "development/native-records/jobs/U20_no_pair/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "485aecbf3bf842b232d93c2a334378a6fb92febf396bcab14935c21921928df3"
+    },
+    {
+      "path": "development/native-records/jobs/U20_no_pair/result.json",
+      "size_bytes": 3125,
+      "sha256": "4ea896a84c054473eea380261bfb70bdb33f33d8a2c839df8d1aecdd28166b49"
+    },
+    {
+      "path": "development/native-records/jobs/U20_original/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "08ae6b7884a63121b1b53c72fc799c20e6f24f4956af2a950bd7614a77432df6"
+    },
+    {
+      "path": "development/native-records/jobs/U20_original/result.json",
+      "size_bytes": 3115,
+      "sha256": "26c68f9188a49fe36ae9521d141e91014e7e7b04f42d2a8384684b7aa1063b6f"
+    },
+    {
+      "path": "development/native-records/jobs/U20_personal_frequency/COMPLETE.json",
+      "size_bytes": 335,
+      "sha256": "43b7e710d2f3ccd61ca3ed94d23ac978e3a1695ae9578383267a6bd9e5f22c2a"
+    },
+    {
+      "path": "development/native-records/jobs/U20_personal_frequency/result.json",
+      "size_bytes": 2767,
+      "sha256": "3d605206ee745831c1ca690f494980c971da833520fb31b50b8646d27b91e3b0"
+    },
+    {
+      "path": "development/native-records/jobs/U20_popularity/COMPLETE.json",
+      "size_bytes": 335,
+      "sha256": "ee74d33cdb7a09a40903cb936793acb8ebe91117b356fc655eee694a097aa667"
+    },
+    {
+      "path": "development/native-records/jobs/U20_popularity/result.json",
+      "size_bytes": 2843,
+      "sha256": "c3a7211510c0f595dc8231e7c8caa39be71196967702a48479e1d58712dbef42"
+    },
+    {
+      "path": "development/native-records/jobs/U20_random/COMPLETE.json",
+      "size_bytes": 335,
+      "sha256": "ed39f4f0e227963dd0cf6e9377073ef58fcff151ded6c0c2a5312402c76c5063"
+    },
+    {
+      "path": "development/native-records/jobs/U20_random/result.json",
+      "size_bytes": 3123,
+      "sha256": "90d2b7ab1fb855dd6169a913793a841fa5fa54870fcc21bf24bd7d241b62cc73"
+    },
+    {
+      "path": "development/native-records/jobs/U20_random_search_frozen/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "a85ad0ecff1862d53e96d5defd69939463a7ff453cfe9eb641ca5ebe432f6613"
+    },
+    {
+      "path": "development/native-records/jobs/U20_random_search_frozen/result.json",
+      "size_bytes": 3695,
+      "sha256": "11176141ffd51b168ab1d2890ba6b2a15c8e9a1653c6fdd84872fca82d9d77e2"
+    },
+    {
+      "path": "development/native-records/jobs/U20_recency_rule/COMPLETE.json",
+      "size_bytes": 335,
+      "sha256": "c6cbb3f070fa1d750023533519d12fba01db12c45353160e3af5342a230fdba4"
+    },
+    {
+      "path": "development/native-records/jobs/U20_recency_rule/result.json",
+      "size_bytes": 2741,
+      "sha256": "da285475a17059d19623146de24df3fb949a17a2e09f0b8ed06784521bb47409"
+    },
+    {
+      "path": "development/native-records/jobs/calibration_fit/COMPLETE.json",
+      "size_bytes": 423,
+      "sha256": "73ba993aee4c2ef974a7aac68ad7e7d6f643e3ff083a5966a513f049e559a978"
+    },
+    {
+      "path": "development/native-records/jobs/calibration_fit/result.json",
+      "size_bytes": 3224,
+      "sha256": "5061187e28f673018499f7029304f00e3f8de7db9cfb97cc1e948eb61352dbde"
+    },
+    {
+      "path": "development/native-records/jobs/calibration_gate/COMPLETE.json",
+      "size_bytes": 336,
+      "sha256": "94c7fca50711b979887da65f40998576ffab569e20d08039daf1370eb4174322"
+    },
+    {
+      "path": "development/native-records/jobs/calibration_gate/calibration.json",
+      "size_bytes": 636,
+      "sha256": "0827ea6970e9547136065a6556c1f49df2ea642e75b376512e98599d9840022c"
+    },
+    {
+      "path": "development/native-records/jobs/calibration_gate/result.json",
+      "size_bytes": 636,
+      "sha256": "0827ea6970e9547136065a6556c1f49df2ea642e75b376512e98599d9840022c"
+    },
+    {
+      "path": "development/native-records/jobs/source/COMPLETE.json",
+      "size_bytes": 244,
+      "sha256": "d8db0e9ef43c11eb4a4e33db7783085f7865281a7fd966a17073f9b0f0995a00"
+    },
+    {
+      "path": "development/native-records/jobs/source/result.json",
+      "size_bytes": 3074,
+      "sha256": "fdd967a248452201395ded746cf4038d93813aa77cee7caf6a12e30b0a153e84"
+    },
+    {
+      "path": "development/native-records/jobs/summary_P20/COMPLETE.json",
+      "size_bytes": 244,
+      "sha256": "bd625db7549236c39677d8a58204aa662b65e63d6b89661af5e66ba65f3adbf4"
+    },
+    {
+      "path": "development/native-records/jobs/summary_P20/result.json",
+      "size_bytes": 53290,
+      "sha256": "fa34fc4e848b453352d709064d4a97ab14a99d8cec5870e15d82627d973b7653"
+    },
+    {
+      "path": "development/native-records/jobs/summary_U20/COMPLETE.json",
+      "size_bytes": 244,
+      "sha256": "5458c2c59e0b8b117421c508be0d8ba2247aca77a90e5ad79401a167eaddfe9b"
+    },
+    {
+      "path": "development/native-records/jobs/summary_U20/result.json",
+      "size_bytes": 53030,
+      "sha256": "fb66caf93140d1b3e6eb696be01721e8be7099fca4ce8cc03ff0196333105240"
+    },
+    {
+      "path": "development/native-records/requests/P20_all.json",
+      "size_bytes": 1701,
+      "sha256": "ee4e0a8392e76b8b96d2a256e9334c258f81366e6eaf2f05f476bb06d41f9156"
+    },
+    {
+      "path": "development/native-records/requests/P20_decay.json",
+      "size_bytes": 1705,
+      "sha256": "6b0dbe05e44a15a0007da190229b9210c96d6538191ceef54a19ff4dfae60116"
+    },
+    {
+      "path": "development/native-records/requests/P20_decay_popularity.json",
+      "size_bytes": 1753,
+      "sha256": "e92ad1838eddfb372c44f5a26369af0e3e0a453950401c6ec3af9d1b911e9631"
+    },
+    {
+      "path": "development/native-records/requests/P20_forward.json",
+      "size_bytes": 1849,
+      "sha256": "54bfaee7edf49add68f23c951650c02d38b5da76518f76db6da5e318ff7826e8"
+    },
+    {
+      "path": "development/native-records/requests/P20_manual.json",
+      "size_bytes": 1707,
+      "sha256": "abd6341b8152472e437a0bfd0e8dae74fbb1f1430627f63f12dd31462c24df93"
+    },
+    {
+      "path": "development/native-records/requests/P20_no_pair.json",
+      "size_bytes": 1735,
+      "sha256": "884d7caf67fe699a2f083dddf606f1d203d771c6c777c73a7d5ecf5434d26ed4"
+    },
+    {
+      "path": "development/native-records/requests/P20_original.json",
+      "size_bytes": 1737,
+      "sha256": "71a855c20cb652f426a90abb9f2a991e9d0d04dc9bf7111006a38c9275147345"
+    },
+    {
+      "path": "development/native-records/requests/P20_personal_frequency.json",
+      "size_bytes": 1757,
+      "sha256": "cd0a91c37bb1eb9097e8005c0d78198cc7ff0f3fa1bb898e121f31b430f3cb8d"
+    },
+    {
+      "path": "development/native-records/requests/P20_popularity.json",
+      "size_bytes": 1741,
+      "sha256": "c16b5f5e2df0f9f9fa6dc87488f3841f6682e31a7d35558414b6ffd61a51c414"
+    },
+    {
+      "path": "development/native-records/requests/P20_random.json",
+      "size_bytes": 1733,
+      "sha256": "ea5225fa769ba64fa25550a18e7c6ea6f62757d300b9190178be9392b7c1ce96"
+    },
+    {
+      "path": "development/native-records/requests/P20_random_search.json",
+      "size_bytes": 2022,
+      "sha256": "ef35646bde340b24caed415fcae87b25e351db644f7a80af913d2dc004276038"
+    },
+    {
+      "path": "development/native-records/requests/P20_recency_rule.json",
+      "size_bytes": 1745,
+      "sha256": "ecbf99649cb145c20ad3e18fb119e3b5b6188fb3064f3bfcb35703303e702d15"
+    },
+    {
+      "path": "development/native-records/requests/U20_all.json",
+      "size_bytes": 1701,
+      "sha256": "51b7bd8f62b1daa59019a0e328de3f1b8f4790095c67e5e576956d6431e8fced"
+    },
+    {
+      "path": "development/native-records/requests/U20_decay.json",
+      "size_bytes": 1705,
+      "sha256": "bec08a7ae313fd44fa2a1a5546e03e398fc8ce51397c6163455cb72710c1e412"
+    },
+    {
+      "path": "development/native-records/requests/U20_decay_popularity.json",
+      "size_bytes": 1753,
+      "sha256": "1937a0c712369c708b1d8e22bc4c1b59918b51858adaeb5a7cb8a47b621f9388"
+    },
+    {
+      "path": "development/native-records/requests/U20_forward_frozen.json",
+      "size_bytes": 1878,
+      "sha256": "578516549136f9bbd7a5d7e3b3ffaf356181af6d8f8cd3553a1f51642a3409af"
+    },
+    {
+      "path": "development/native-records/requests/U20_manual.json",
+      "size_bytes": 1707,
+      "sha256": "5804a769310e2b85db3e09f716d36f0b0e0902660a0b1bce7b3e3a465d033e8b"
+    },
+    {
+      "path": "development/native-records/requests/U20_no_pair.json",
+      "size_bytes": 1735,
+      "sha256": "ae7611c9fe7705f553ab20b00e29f44522b3cc12f1b8e90e62bb92b11017de38"
+    },
+    {
+      "path": "development/native-records/requests/U20_original.json",
+      "size_bytes": 1737,
+      "sha256": "ffbc821ee0a69bad6805f5f8a590e580c492bf5d29b0e80119e7bc4658023996"
+    },
+    {
+      "path": "development/native-records/requests/U20_personal_frequency.json",
+      "size_bytes": 1757,
+      "sha256": "e28083643fda9c240436bf08d287986e7d2bc671abd3559a08703f676a1a3186"
+    },
+    {
+      "path": "development/native-records/requests/U20_popularity.json",
+      "size_bytes": 1741,
+      "sha256": "e2c089e4e9ac99fad619a209ab8e82e68f837ed892b2e42edba08333a324be33"
+    },
+    {
+      "path": "development/native-records/requests/U20_random.json",
+      "size_bytes": 1733,
+      "sha256": "1bedb99ecbc257baa7f1fda54bbd7c754728583d80bc448ea7dfa8eb9f0c6c68"
+    },
+    {
+      "path": "development/native-records/requests/U20_random_search_frozen.json",
+      "size_bytes": 1896,
+      "sha256": "4f39bc14ae42af92ee0c67b31b5288f3d4d5f5810cd33f8d4d2b52c2aad4eaeb"
+    },
+    {
+      "path": "development/native-records/requests/U20_recency_rule.json",
+      "size_bytes": 1745,
+      "sha256": "9ad9f0a80b09cf548bf208698896a74974ec25b4d220fcac6af5936c55b90cd5"
+    },
+    {
+      "path": "development/native-records/requests/calibration_P20.json",
+      "size_bytes": 1688,
+      "sha256": "9a4624b49658604f80e48e408bf86eb99976791d4f5fd6188326cc44c10db693"
+    },
+    {
+      "path": "development/native-records/requests/calibration_U20.json",
+      "size_bytes": 1688,
+      "sha256": "72861931cffc31c61b34d84c1613d4be769428a454e5893a24ad91094b9b549c"
+    },
+    {
+      "path": "development/native-records/requests/calibration_data.json",
+      "size_bytes": 1686,
+      "sha256": "cebc99e21a228383a4141eed2e51bc929df08040ccf8892efd88d1bb91ce8275"
+    },
+    {
+      "path": "development/native-records/requests/calibration_fit.json",
+      "size_bytes": 1711,
+      "sha256": "fa2e57b6e9f9392a1a54773a8b1c3a90652395396a54cec96f4cfb945f3c6ee4"
+    },
+    {
+      "path": "development/native-records/requests/calibration_gate.json",
+      "size_bytes": 1737,
+      "sha256": "95d17abafd2ac5a065317b820369c50f0c46e280bcef64bbefcd0370bd3ba25b"
+    },
+    {
+      "path": "development/native-records/requests/data_main.json",
+      "size_bytes": 1679,
+      "sha256": "6dc386259d123be700c360a85c2f67f00d1376d60b3d6c93150e654e030c08f5"
+    },
+    {
+      "path": "development/native-records/requests/prepare_P20.json",
+      "size_bytes": 1681,
+      "sha256": "55decc51982f649ecd8c05bd555eb9f674207da48a01f0a6a5ae95a25248e4d5"
+    },
+    {
+      "path": "development/native-records/requests/prepare_U20.json",
+      "size_bytes": 1681,
+      "sha256": "177ecdd919934583530d2aa4486dcca7461a0f9ce791a90d90ad4ec8c65f8269"
+    },
+    {
+      "path": "development/native-records/requests/source.json",
+      "size_bytes": 1498,
+      "sha256": "34cb6fd5fbb03d0658b9f788bf190e6923666455ebe6413dbadcfad415d3b945"
+    },
+    {
+      "path": "development/native-records/requests/summary_P20.json",
+      "size_bytes": 3700,
+      "sha256": "53174edf04a2c7275a8286051210ed930679d08ddb233bf67fa05145beb53356"
+    },
+    {
+      "path": "development/native-records/requests/summary_U20.json",
+      "size_bytes": 3714,
+      "sha256": "30edbd80d1cd8ca21f9837d1b9adbf9d644dee35caedde3a6bf5e32072bb3b82"
+    },
+    {
+      "path": "development/plan_manifest.json",
+      "size_bytes": 11074,
+      "sha256": "f90207bea343de30c0bd6654111057cefa553c7b41cba35ad6844fe2aab18cc6"
+    },
+    {
+      "path": "development/readiness.json",
+      "size_bytes": 648,
+      "sha256": "27b69124d3eafc64dab9c3f6fc58d4d9a701ed1e1e2b917a5352858b069892fe"
+    },
+    {
+      "path": "development/source-run-manifest.json",
+      "size_bytes": 60166,
+      "sha256": "0f192967e1357d509ee3b3450021e8c74d9ab3ad6fd32c9165e4b5f97f8d7c60"
+    },
+    {
+      "path": "development/study.json",
+      "size_bytes": 137746,
+      "sha256": "eaf4f350c46da072074f3e6f73d091f65e381dd3b060efc9e01c7333b2887383"
+    },
+    {
+      "path": "development/usage.json",
+      "size_bytes": 207,
+      "sha256": "0136474362ef9371112a335f54476ed49051649b74839d3c84dc688805eb16ff"
+    },
+    {
+      "path": "final/freeze.json",
+      "size_bytes": 16963,
+      "sha256": "96c3d24f322623ce63e68ba785abc99fbe09b7924098ad9801836279498b51a1"
+    },
+    {
+      "path": "final/result.json",
+      "size_bytes": 58190,
+      "sha256": "599893d2ae9e0437415cb9b095721a5c424a391111f81ebd989d6ae0b2455594"
+    },
+    {
+      "path": "final/selected-evidence.tar.xz",
+      "size_bytes": 39005572,
+      "sha256": "e12ea967bd550b036013eb0e498b75f6659508ebe51c7814b342fe4e63182b77"
+    },
+    {
+      "path": "mac/analysis.tar.xz",
+      "size_bytes": 3644644,
+      "sha256": "9bd26061a6b9463f2b13fcf90fe0352475365d5e52cc370820d26384b461199d"
+    }
+  ]
+}

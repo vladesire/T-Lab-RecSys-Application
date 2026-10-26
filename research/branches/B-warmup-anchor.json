@@ -1,0 +1,11 @@
+{
+  "hypothesis_ids": [],
+  "id": "B-warmup-anchor",
+  "parent_id": null,
+  "planned_experiment_ids": [],
+  "purpose": "Verify fresh execution, archived anchor and evidence-to-paper delivery; recorded retrospectively.",
+  "schema_version": 1,
+  "status": "active",
+  "status_decision_id": null,
+  "title": "Warmup baseline reproduction"
+}

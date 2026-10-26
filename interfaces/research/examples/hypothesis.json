@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "H-fixture",
+  "branch_ids": [
+    "B-fixture"
+  ],
+  "question": "Does the plumbing preserve known numbers?",
+  "rationale": "Infrastructure acceptance only.",
+  "estimand": {
+    "metric": "ndcg@2"
+  },
+  "comparison": {},
+  "decision_rule": {},
+  "references": [],
+  "created_at": null
+}

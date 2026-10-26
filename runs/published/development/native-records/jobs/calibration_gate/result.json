@@ -1,0 +1,14 @@
+{
+  "calibration_process_tree_peak_gib": 0.7409744262695312,
+  "planning_peak_gib": 6.387304067611694,
+  "main_feature_matrix_gib_per_protocol": 0.3676861524581909,
+  "rough_runtime_seconds_range": [
+    397.1094963362497,
+    4765.313956034996
+  ],
+  "calibration_data_prep_seconds": 7.288149161000092,
+  "included_fit_startup_seconds_per_job": 2.409313036000185,
+  "limitations": "Planning envelope from small local calibration, not a validated scaling law; includes sampling/materialization and repeated fits, excludes acquisition/setup; guards remain necessary",
+  "search_budget_allowed": true,
+  "maximum_total_wall_hours": 1.5
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "D-submission-results",
+  "branch_ids": [
+    "B-finish-study",
+    "B-finish-representations",
+    "B-finish-repetition",
+    "B-submission-automatic"
+  ],
+  "hypothesis_ids": [
+    "H-finish-compact",
+    "H-finish-decay",
+    "H-finish-repeat",
+    "H-submission-automatic"
+  ],
+  "recorded_at": "2026-10-25T20:37:08.138450+00:00",
+  "status": "retrospective",
+  "judgment": "Complete the submission with actual automatic selection and frozen temporal evaluation. The algorithm selected user_item_decay_all, expanding 17 to25 features. On P20 test, automatic-minus-manual NDCG@10 is +0.0005666769978163662, paired95% interval[-0.0005502005327531794,0.0016716362081810785]: no established gain, but the chosen -0.005 tolerance is supported here. Matched search covers the same six singleton candidates, so agreement is a sanity check, not optimizer superiority. Preserve earlier development comparisons and repeat/novel diagnostic findings, all failures, and final-test scope. Mac development upload has288 metric cells exactly matching Linux; same cohort, not independent confirmation.",
+  "evidence": [
+    "evidence/submission/study.json",
+    "evidence/submission/final.json",
+    "evidence/submission/freeze.json",
+    "evidence/mac-search/analysis.json",
+    "reports/submission/main.pdf",
+    "reproducibility/SUBMISSION_VALIDATION.md"
+  ],
+  "alternatives": [
+    "Claim an automatic improvement: unsupported by the final interval.",
+    "Treat matched enumeration as an independent superior optimizer: unsupported.",
+    "Run additional models after inspecting this holdout: excluded."
+  ],
+  "next_actions": [
+    "Owner reads exact final PDF and edits author statement/name if needed.",
+    "Push source and upload checksum-pinned analysis/final-evidence assets.",
+    "Use explicit reproduction commands; preserve this holdout before future research."
+  ],
+  "supersedes": [
+    "D-finish-no-local-run"
+  ],
+  "author": "Coordinator (AI-assisted), based on actual execution and owner artifacts",
+  "model": null
+}

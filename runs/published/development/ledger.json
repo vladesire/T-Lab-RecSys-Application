@@ -1,0 +1,3180 @@
+{
+  "source": {
+    "id": "source",
+    "priority": 0,
+    "depends_on": [],
+    "request": {
+      "kind": "source",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/source",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:14:41.788842+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/source.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/source.attempt1.partial",
+        "wall_seconds_so_far": 0.7623100200003137,
+        "finished": "2026-10-25T20:14:42.809710+00:00",
+        "wall_seconds": 1.0125198470000214,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:14:41.784746+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 294883328,
+      "minimum_system_available_bytes": 9392513024,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:14:42.810266+00:00",
+    "request_hash": "4ae0130a0fca15871c1c2306ce6200f682085834203b60ca26d8acf8f5570eaf"
+  },
+  "calibration_data": {
+    "id": "calibration_data",
+    "priority": 0,
+    "depends_on": [
+      "source"
+    ],
+    "request": {
+      "kind": "dataset",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "panel": "calibration",
+      "source_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/source"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/calibration_data",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:14:42.817517+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/calibration_data.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/calibration_data.attempt1.partial",
+        "wall_seconds_so_far": 7.037958688999879,
+        "finished": "2026-10-25T20:14:50.108770+00:00",
+        "wall_seconds": 7.288149161000092,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:14:42.813703+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 795615232,
+      "minimum_system_available_bytes": 8842522624,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:14:50.123773+00:00",
+    "request_hash": "847c2503c899f71208a25a359d44267dfa6b5a1dc50f646159ed18758d2a419f"
+  },
+  "calibration_U20": {
+    "id": "calibration_U20",
+    "priority": 0,
+    "depends_on": [
+      "calibration_data"
+    ],
+    "request": {
+      "kind": "protocol",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "dataset_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/calibration_data",
+      "protocol": "U20"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/calibration_U20",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:14:50.136603+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/calibration_U20.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/calibration_U20.attempt1.partial",
+        "wall_seconds_so_far": 3.0185842330001833,
+        "finished": "2026-10-25T20:14:53.410309+00:00",
+        "wall_seconds": 3.268803849000051,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:14:50.129098+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 338984960,
+      "minimum_system_available_bytes": 9284001792,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:14:53.414300+00:00",
+    "request_hash": "869964c2112b19e539bb226c6b6b7ae9cd1b0689409a359e25949d0978a4ef6f"
+  },
+  "calibration_P20": {
+    "id": "calibration_P20",
+    "priority": 0,
+    "depends_on": [
+      "calibration_data"
+    ],
+    "request": {
+      "kind": "protocol",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "dataset_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/calibration_data",
+      "protocol": "P20"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/calibration_P20",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:14:53.421772+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/calibration_P20.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/calibration_P20.attempt1.partial",
+        "wall_seconds_so_far": 5.028539869999804,
+        "finished": "2026-10-25T20:14:58.708269+00:00",
+        "wall_seconds": 5.282958349999717,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:14:53.417466+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 341516288,
+      "minimum_system_available_bytes": 9302081536,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:14:58.712444+00:00",
+    "request_hash": "693953eaf7491f5f19f786693265d640b3c028e2d7aa1c696494797d691669c8"
+  },
+  "calibration_fit": {
+    "id": "calibration_fit",
+    "priority": 0,
+    "depends_on": [
+      "calibration_P20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/calibration_P20",
+      "method": "manual",
+      "feature_set": "manual"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/calibration_fit",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:14:59.047965+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/calibration_fit.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/calibration_fit.attempt1.partial",
+        "wall_seconds_so_far": 2.267354462000185,
+        "finished": "2026-10-25T20:15:01.568367+00:00",
+        "wall_seconds": 2.517526843000269,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:14:59.044541+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 311169024,
+      "minimum_system_available_bytes": 9326149632,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:15:01.569135+00:00",
+    "request_hash": "6a03e441629b21c6385f54144ca7cf55146a077372361ffc526db5b3ebbaedf5"
+  },
+  "calibration_gate": {
+    "id": "calibration_gate",
+    "priority": 0,
+    "depends_on": [
+      "calibration_U20",
+      "calibration_P20",
+      "calibration_fit"
+    ],
+    "request": {
+      "kind": "gate",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "run": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001",
+      "feature_jobs": [
+        "calibration_U20",
+        "calibration_P20"
+      ],
+      "fit_job": "calibration_fit"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/calibration_gate",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:15:01.576272+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/calibration_gate.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/calibration_gate.attempt1.partial",
+        "wall_seconds_so_far": 0.25638097799992465,
+        "finished": "2026-10-25T20:15:02.085880+00:00",
+        "wall_seconds": 0.5065692939997462,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:15:01.572485+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 210903040,
+      "minimum_system_available_bytes": 9335869440,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:15:02.086440+00:00",
+    "request_hash": "0992c31d750f2a2f3937dcdf4706b2d60d741c912fd5d66c928302bdf9cfd03f"
+  },
+  "data_main": {
+    "id": "data_main",
+    "priority": 0,
+    "depends_on": [
+      "source",
+      "calibration_gate"
+    ],
+    "request": {
+      "kind": "dataset",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "panel": "main",
+      "source_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/source"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/data_main",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:15:02.093666+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/data_main.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/data_main.attempt1.partial",
+        "wall_seconds_so_far": 49.787192639000295,
+        "finished": "2026-10-25T20:15:52.134342+00:00",
+        "wall_seconds": 50.03743104900013,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:15:02.089870+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 2661646336,
+      "minimum_system_available_bytes": 6986547200,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:15:52.215447+00:00",
+    "request_hash": "970ffabde3ab5b53674ba7f1c95922ddeeaa1377d966a6d1e94511c8dbff44ea"
+  },
+  "prepare_U20": {
+    "id": "prepare_U20",
+    "priority": 0,
+    "depends_on": [
+      "data_main"
+    ],
+    "request": {
+      "kind": "protocol",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "dataset_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/data_main",
+      "protocol": "U20"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:15:52.221940+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/prepare_U20.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20.attempt1.partial",
+        "wall_seconds_so_far": 55.545836878000046,
+        "finished": "2026-10-25T20:16:48.021748+00:00",
+        "wall_seconds": 55.796036146000006,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:15:52.218599+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 1355608064,
+      "minimum_system_available_bytes": 8915976192,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:16:48.301958+00:00",
+    "request_hash": "22a665e787b1724a20d077e4f2973473b441857b16dbee21a321daf0c7d60a47"
+  },
+  "U20_random": {
+    "id": "U20_random",
+    "priority": 1,
+    "depends_on": [
+      "prepare_U20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "random",
+      "feature_set": "random",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_random",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:13.637648+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_random.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_random.attempt1.partial",
+        "wall_seconds_so_far": 1.7610251249998328,
+        "finished": "2026-10-25T20:18:15.651981+00:00",
+        "wall_seconds": 2.011198669999885,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:13.634053+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 473059328,
+      "minimum_system_available_bytes": 9273884672,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:15.654950+00:00",
+    "request_hash": "b9b4e1546417f8554688031affc40594abfb80795437c6cd2993dbc93a1238e3"
+  },
+  "U20_popularity": {
+    "id": "U20_popularity",
+    "priority": 1,
+    "depends_on": [
+      "prepare_U20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "popularity",
+      "feature_set": "popularity",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_popularity",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:15.965020+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_popularity.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_popularity.attempt1.partial",
+        "wall_seconds_so_far": 1.259661942999628,
+        "finished": "2026-10-25T20:18:17.478501+00:00",
+        "wall_seconds": 1.509831321999627,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:15.961419+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 459526144,
+      "minimum_system_available_bytes": 9261625344,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:17.479337+00:00",
+    "request_hash": "eb5f3002daf228b3bfddb80cbc33814c4a9b61d0ceee1c2dfb936ebe2297e869"
+  },
+  "U20_recency_rule": {
+    "id": "U20_recency_rule",
+    "priority": 1,
+    "depends_on": [
+      "prepare_U20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "recency_rule",
+      "feature_set": "recency_rule",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_recency_rule",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:17.773960+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_recency_rule.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_recency_rule.attempt1.partial",
+        "wall_seconds_so_far": 1.760571864999747,
+        "finished": "2026-10-25T20:18:19.788292+00:00",
+        "wall_seconds": 2.010807167999701,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:17.770465+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 456265728,
+      "minimum_system_available_bytes": 9287667712,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:19.789766+00:00",
+    "request_hash": "8d5078cef7275e27053b9d14f7e999c23fef5e9024b503edd2e59d670353583f"
+  },
+  "U20_personal_frequency": {
+    "id": "U20_personal_frequency",
+    "priority": 1,
+    "depends_on": [
+      "prepare_U20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "personal_frequency",
+      "feature_set": "personal_frequency",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_personal_frequency",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:20.107325+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_personal_frequency.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_personal_frequency.attempt1.partial",
+        "wall_seconds_so_far": 1.2604204849999405,
+        "finished": "2026-10-25T20:18:21.621093+00:00",
+        "wall_seconds": 1.5105993930001205,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:20.103966+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 467595264,
+      "minimum_system_available_bytes": 9302192128,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:21.621747+00:00",
+    "request_hash": "170232c2b4c794d5a7ece4ab13eb96c059fa88a3eecaab988f819edb092bc47a"
+  },
+  "U20_decay_popularity": {
+    "id": "U20_decay_popularity",
+    "priority": 1,
+    "depends_on": [
+      "prepare_U20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "decay_popularity",
+      "feature_set": "decay_popularity",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_decay_popularity",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:21.929221+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_decay_popularity.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_decay_popularity.attempt1.partial",
+        "wall_seconds_so_far": 1.2620753100000002,
+        "finished": "2026-10-25T20:18:23.444853+00:00",
+        "wall_seconds": 1.512254904999736,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:21.925841+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 468725760,
+      "minimum_system_available_bytes": 9314148352,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:23.448888+00:00",
+    "request_hash": "b8457405d4fecf1b4b27236d9a0bd3ee01a71bd9763ad0b0cedb2147f46f0742"
+  },
+  "U20_original": {
+    "id": "U20_original",
+    "priority": 1,
+    "depends_on": [
+      "prepare_U20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "original",
+      "feature_set": "original",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_original",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:23.756084+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_original.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_original.attempt1.partial",
+        "wall_seconds_so_far": 6.295219424000152,
+        "finished": "2026-10-25T20:18:30.305006+00:00",
+        "wall_seconds": 6.545457605000138,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:23.752497+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 875528192,
+      "minimum_system_available_bytes": 9204416512,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:30.306893+00:00",
+    "request_hash": "10dd55e074980f9c1e5f8a1fdfc043e136169c7fab43a339fa28e427cd2ed845"
+  },
+  "U20_no_pair": {
+    "id": "U20_no_pair",
+    "priority": 1,
+    "depends_on": [
+      "prepare_U20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "no_pair",
+      "feature_set": "no_pair",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_no_pair",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:30.604979+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_no_pair.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_no_pair.attempt1.partial",
+        "wall_seconds_so_far": 5.5295472389998395,
+        "finished": "2026-10-25T20:18:36.388292+00:00",
+        "wall_seconds": 5.779764179999802,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:30.601064+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 856096768,
+      "minimum_system_available_bytes": 9244033024,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:36.390237+00:00",
+    "request_hash": "2326c52d55401ba342bbad2415da1dc2262c845c718094eaef5b39f9117944c2"
+  },
+  "U20_manual": {
+    "id": "U20_manual",
+    "priority": 2,
+    "depends_on": [
+      "prepare_U20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "manual",
+      "feature_set": "manual"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_manual",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:59.981181+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_manual.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_manual.attempt1.partial",
+        "wall_seconds_so_far": 6.535411089000263,
+        "finished": "2026-10-25T20:19:06.770547+00:00",
+        "wall_seconds": 6.78564061599991,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:59.977771+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 935440384,
+      "minimum_system_available_bytes": 9160777728,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:19:06.772978+00:00",
+    "request_hash": "e465a0c1cacaddd1d3feb16d507616a26bdd359d8ffcbbc979189207b450a888"
+  },
+  "U20_decay": {
+    "id": "U20_decay",
+    "priority": 2,
+    "depends_on": [
+      "prepare_U20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "decay",
+      "feature_set": "decay"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_decay",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:19:07.142880+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_decay.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_decay.attempt1.partial",
+        "wall_seconds_so_far": 6.286354799000037,
+        "finished": "2026-10-25T20:19:13.682775+00:00",
+        "wall_seconds": 6.536560048999945,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:19:07.138951+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 943636480,
+      "minimum_system_available_bytes": 9148358656,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:19:13.685137+00:00",
+    "request_hash": "e7775b7c15aeb1625e64a29f258c5ffc1371654bbb02985c5d53ae52fe4b896a"
+  },
+  "U20_all": {
+    "id": "U20_all",
+    "priority": 2,
+    "depends_on": [
+      "prepare_U20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "all",
+      "feature_set": "all"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_all",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:19:14.053966+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_all.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_all.attempt1.partial",
+        "wall_seconds_so_far": 9.30302859099993,
+        "finished": "2026-10-25T20:19:23.610892+00:00",
+        "wall_seconds": 9.553218124000068,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:19:14.050222+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 1140555776,
+      "minimum_system_available_bytes": 8615268352,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:19:23.613509+00:00",
+    "request_hash": "a74e1a630eed832ff30e04949fced57ed0221d208ab3a6ce48fd52c278b70aca"
+  },
+  "prepare_P20": {
+    "id": "prepare_P20",
+    "priority": 0,
+    "depends_on": [
+      "data_main"
+    ],
+    "request": {
+      "kind": "protocol",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "dataset_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/data_main",
+      "protocol": "P20"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:16:48.308889+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/prepare_P20.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20.attempt1.partial",
+        "wall_seconds_so_far": 84.46224524499985,
+        "finished": "2026-10-25T20:18:13.024924+00:00",
+        "wall_seconds": 84.71248087899994,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:16:48.304999+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 1358454784,
+      "minimum_system_available_bytes": 8907952128,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:13.324277+00:00",
+    "request_hash": "e7c475294bf19ee776768d47016b758a1b26851c8aa5b76675f90485fc4322b2"
+  },
+  "P20_random": {
+    "id": "P20_random",
+    "priority": 1,
+    "depends_on": [
+      "prepare_P20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "random",
+      "feature_set": "random",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_random",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:36.710541+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_random.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_random.attempt1.partial",
+        "wall_seconds_so_far": 1.7616400379997685,
+        "finished": "2026-10-25T20:18:38.725591+00:00",
+        "wall_seconds": 2.0118457239996133,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:36.705894+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 472100864,
+      "minimum_system_available_bytes": 9320501248,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:38.728675+00:00",
+    "request_hash": "c691d558829659a39231548e7738dab96c386efbfda4bf0c309bb48f641d5bff"
+  },
+  "P20_popularity": {
+    "id": "P20_popularity",
+    "priority": 1,
+    "depends_on": [
+      "prepare_P20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "popularity",
+      "feature_set": "popularity",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_popularity",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:39.057645+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_popularity.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_popularity.attempt1.partial",
+        "wall_seconds_so_far": 1.5107582790001288,
+        "finished": "2026-10-25T20:18:40.822230+00:00",
+        "wall_seconds": 1.7609824070000286,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:39.053606+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 467038208,
+      "minimum_system_available_bytes": 9256091648,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:40.823338+00:00",
+    "request_hash": "f71e26106be4b7131a4ac9418ce7da68af05d1d220b11bd7b32200977d70c8de"
+  },
+  "P20_recency_rule": {
+    "id": "P20_recency_rule",
+    "priority": 1,
+    "depends_on": [
+      "prepare_P20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "recency_rule",
+      "feature_set": "recency_rule",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_recency_rule",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:41.120667+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_recency_rule.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_recency_rule.attempt1.partial",
+        "wall_seconds_so_far": 1.7606794819998868,
+        "finished": "2026-10-25T20:18:43.134691+00:00",
+        "wall_seconds": 2.010861140999623,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:41.116895+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 481263616,
+      "minimum_system_available_bytes": 9264279552,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:43.135783+00:00",
+    "request_hash": "75993d12aff2420da3b4e3255cba1918458e91488a7c473026e0e5c94556ee29"
+  },
+  "P20_personal_frequency": {
+    "id": "P20_personal_frequency",
+    "priority": 1,
+    "depends_on": [
+      "prepare_P20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "personal_frequency",
+      "feature_set": "personal_frequency",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_personal_frequency",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:43.431981+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_personal_frequency.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_personal_frequency.attempt1.partial",
+        "wall_seconds_so_far": 1.511033679999855,
+        "finished": "2026-10-25T20:18:45.196882+00:00",
+        "wall_seconds": 1.7612219630000254,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:43.428017+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 472190976,
+      "minimum_system_available_bytes": 9282936832,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:45.197546+00:00",
+    "request_hash": "4d24cecc1dd91ad7e50e669871cc43aef949661c338be5bfa9ac96018c1a8509"
+  },
+  "P20_decay_popularity": {
+    "id": "P20_decay_popularity",
+    "priority": 1,
+    "depends_on": [
+      "prepare_P20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "decay_popularity",
+      "feature_set": "decay_popularity",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_decay_popularity",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:45.482614+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_decay_popularity.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_decay_popularity.attempt1.partial",
+        "wall_seconds_so_far": 1.2592933500000072,
+        "finished": "2026-10-25T20:18:46.995273+00:00",
+        "wall_seconds": 1.5094869559998187,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:45.479099+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 478072832,
+      "minimum_system_available_bytes": 9297252352,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:46.998135+00:00",
+    "request_hash": "10dc1a2a83a0da5f152b6f01cd8721d2b80032067becc7333eda505db1d40ba9"
+  },
+  "P20_original": {
+    "id": "P20_original",
+    "priority": 1,
+    "depends_on": [
+      "prepare_P20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "original",
+      "feature_set": "original",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_original",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:47.293961+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_original.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_original.attempt1.partial",
+        "wall_seconds_so_far": 5.784858295000049,
+        "finished": "2026-10-25T20:18:53.332230+00:00",
+        "wall_seconds": 6.035075154999959,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:47.290370+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 887697408,
+      "minimum_system_available_bytes": 9222115328,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:53.334776+00:00",
+    "request_hash": "69fed0291e1f6eb0b6c55274c6f36875728405d16ca065972255275ba98c5624"
+  },
+  "P20_no_pair": {
+    "id": "P20_no_pair",
+    "priority": 1,
+    "depends_on": [
+      "prepare_P20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "no_pair",
+      "feature_set": "no_pair",
+      "verify_anchor": false
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_no_pair",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:18:53.640388+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_no_pair.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_no_pair.attempt1.partial",
+        "wall_seconds_so_far": 5.780720169000233,
+        "finished": "2026-10-25T20:18:59.674630+00:00",
+        "wall_seconds": 6.030905248000181,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:18:53.636521+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 867176448,
+      "minimum_system_available_bytes": 9245798400,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:18:59.677768+00:00",
+    "request_hash": "a9c7655e44dfa055a0a17a41fae8877a3721ca74e7ebf2f5510fbd862e94eeda"
+  },
+  "P20_manual": {
+    "id": "P20_manual",
+    "priority": 2,
+    "depends_on": [
+      "prepare_P20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "manual",
+      "feature_set": "manual"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_manual",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:19:23.917762+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_manual.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_manual.attempt1.partial",
+        "wall_seconds_so_far": 6.2916424949999055,
+        "finished": "2026-10-25T20:19:30.465443+00:00",
+        "wall_seconds": 6.54426767599989,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:19:23.913687+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 940806144,
+      "minimum_system_available_bytes": 8935649280,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:19:30.468485+00:00",
+    "request_hash": "e138b850817a689f489f7103ddbfe0e51e9348a3342c065dfc71f3f8ee2648e9"
+  },
+  "P20_decay": {
+    "id": "P20_decay",
+    "priority": 2,
+    "depends_on": [
+      "prepare_P20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "decay",
+      "feature_set": "decay"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_decay",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:19:30.865577+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_decay.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_decay.attempt1.partial",
+        "wall_seconds_so_far": 6.839707694000026,
+        "finished": "2026-10-25T20:19:37.959770+00:00",
+        "wall_seconds": 7.089868468000077,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:19:30.860603+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 947453952,
+      "minimum_system_available_bytes": 8868687872,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:19:37.962681+00:00",
+    "request_hash": "d03f5e23ecfb46bfe71e18ed9471dd7578ad6fdb8f6c74683afba86e344ca704"
+  },
+  "P20_all": {
+    "id": "P20_all",
+    "priority": 2,
+    "depends_on": [
+      "prepare_P20"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "all",
+      "feature_set": "all"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_all",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:19:38.282562+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_all.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_all.attempt1.partial",
+        "wall_seconds_so_far": 8.561447340000086,
+        "finished": "2026-10-25T20:19:47.097725+00:00",
+        "wall_seconds": 8.811614317000021,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:19:38.278616+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 1157517312,
+      "minimum_system_available_bytes": 8708247552,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:19:47.100658+00:00",
+    "request_hash": "1a11b73d35d99188e8044fd1148ce9281383ead6d6cb9b6cb2aca4af8c2174bd"
+  },
+  "P20_forward": {
+    "id": "P20_forward",
+    "priority": 3,
+    "depends_on": [
+      "P20_manual",
+      "calibration_gate"
+    ],
+    "request": {
+      "kind": "search",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "forward",
+      "manual_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_manual"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_forward",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:19:47.397500+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_forward.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_forward.attempt1.partial",
+        "wall_seconds_so_far": 22.85977874399987,
+        "finished": "2026-10-25T20:20:10.511085+00:00",
+        "wall_seconds": 23.109985154000242,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:19:47.393588+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 1014394880,
+      "minimum_system_available_bytes": 9003216896,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:20:10.514013+00:00",
+    "request_hash": "635b40cf9f3b890f20db5d1f51cbed2ab10d333be7b2972cc771a2e7f54387cf"
+  },
+  "P20_random_search": {
+    "id": "P20_random_search",
+    "priority": 3,
+    "depends_on": [
+      "P20_forward"
+    ],
+    "request": {
+      "kind": "search",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "method": "random_search",
+      "manual_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_manual",
+      "forward_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_forward"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_random_search",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:20:10.829780+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/P20_random_search.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_random_search.attempt1.partial",
+        "wall_seconds_so_far": 24.38615326399986,
+        "finished": "2026-10-25T20:20:35.469935+00:00",
+        "wall_seconds": 24.636323442000048,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:20:10.825943+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 1015377920,
+      "minimum_system_available_bytes": 9080897536,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:20:35.472890+00:00",
+    "request_hash": "e97faebeadb2c2591646f55af42ff7cff0cf2fd3338a12e0419b6a3d5657986a"
+  },
+  "U20_forward_frozen": {
+    "id": "U20_forward_frozen",
+    "priority": 4,
+    "depends_on": [
+      "prepare_U20",
+      "P20_forward"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "forward",
+      "selection_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_forward",
+      "feature_set": "forward"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_forward_frozen",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:20:35.782514+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_forward_frozen.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_forward_frozen.attempt1.partial",
+        "wall_seconds_so_far": 7.036507143000108,
+        "finished": "2026-10-25T20:20:43.072805+00:00",
+        "wall_seconds": 7.286698019000141,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:20:35.778773+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 998744064,
+      "minimum_system_available_bytes": 9050664960,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:20:43.075347+00:00",
+    "request_hash": "3d8f5870c1e158758ee8b776b67f8ad5e24e9a3c19f220860661f004a336f8b8"
+  },
+  "U20_random_search_frozen": {
+    "id": "U20_random_search_frozen",
+    "priority": 4,
+    "depends_on": [
+      "prepare_U20",
+      "P20_random_search"
+    ],
+    "request": {
+      "kind": "fit",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "method": "random_search",
+      "selection_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_random_search",
+      "feature_set": "random_search"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_random_search_frozen",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:20:43.366372+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/U20_random_search_frozen.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_random_search_frozen.attempt1.partial",
+        "wall_seconds_so_far": 4.019512242000019,
+        "finished": "2026-10-25T20:20:47.639432+00:00",
+        "wall_seconds": 4.2696754610001335,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:20:43.362602+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 579354624,
+      "minimum_system_available_bytes": 9273692160,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:20:47.641898+00:00",
+    "request_hash": "253d510b1634690b804297e33abd002ef66d65754caf2f000e30a3ad33a6e441"
+  },
+  "artist_family": {
+    "id": "artist_family",
+    "priority": 5,
+    "depends_on": [],
+    "request": {
+      "kind": "blocked",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "reason": "blocked_pending_mapping_semantics_validation"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/artist_family",
+    "status": "blocked",
+    "attempts": [],
+    "reason": "blocked_pending_mapping_semantics_validation"
+  },
+  "secondary_3000_users": {
+    "id": "secondary_3000_users",
+    "priority": 5,
+    "depends_on": [],
+    "request": {
+      "kind": "blocked",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "reason": "blocked_pending_secondary_scale_calibration"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/secondary_3000_users",
+    "status": "blocked",
+    "attempts": [],
+    "reason": "blocked_pending_secondary_scale_calibration"
+  },
+  "candidate_count_100": {
+    "id": "candidate_count_100",
+    "priority": 5,
+    "depends_on": [],
+    "request": {
+      "kind": "blocked",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "reason": "blocked_pending_variable_cardinality_validation"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/candidate_count_100",
+    "status": "blocked",
+    "attempts": [],
+    "reason": "blocked_pending_variable_cardinality_validation"
+  },
+  "novel_enriched_sample": {
+    "id": "novel_enriched_sample",
+    "priority": 5,
+    "depends_on": [],
+    "request": {
+      "kind": "blocked",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "reason": "not enabled; natural-prevalence novel breakdown retained"
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/novel_enriched_sample",
+    "status": "blocked",
+    "attempts": [],
+    "reason": "not enabled; natural-prevalence novel breakdown retained"
+  },
+  "summary_U20": {
+    "id": "summary_U20",
+    "priority": 6,
+    "depends_on": [
+      "prepare_U20"
+    ],
+    "request": {
+      "kind": "summary",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+      "protocol": "U20",
+      "methods": {
+        "random": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_random",
+        "popularity": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_popularity",
+        "recency_rule": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_recency_rule",
+        "personal_frequency": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_personal_frequency",
+        "decay_popularity": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_decay_popularity",
+        "original": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_original",
+        "no_pair": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_no_pair",
+        "manual": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_manual",
+        "decay": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_decay",
+        "all": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_all",
+        "forward": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_forward_frozen",
+        "random_search": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/U20_random_search_frozen"
+      }
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/summary_U20",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:20:47.649312+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/summary_U20.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/summary_U20.attempt1.partial",
+        "wall_seconds_so_far": 14.317923509000138,
+        "finished": "2026-10-25T20:21:02.221048+00:00",
+        "wall_seconds": 14.568143801000133,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:20:47.645698+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 281546752,
+      "minimum_system_available_bytes": 9333219328,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:21:02.221672+00:00",
+    "request_hash": "2ed0b0cca806556003cee50a252ec6fe22721bfed3e05c3b1c6911134bdccecd"
+  },
+  "summary_P20": {
+    "id": "summary_P20",
+    "priority": 6,
+    "depends_on": [
+      "prepare_P20"
+    ],
+    "request": {
+      "kind": "summary",
+      "config": {
+        "additional_model_seed_offsets": [],
+        "bootstrap_replicates": 1000,
+        "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+        "iteration1_output": "runs/iteration1",
+        "low_memory_seconds": 10,
+        "max_retries": 1,
+        "maximum_selected_rows": 8000000,
+        "minimum_available_gib": 4,
+        "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+        "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+        "optional_artist": "blocked_pending_mapping_semantics_validation",
+        "panels": {
+          "calibration": {
+            "development": 250,
+            "train": 300,
+            "users": 100
+          },
+          "iteration1": {
+            "development": 5000,
+            "train": 3000,
+            "users": 100
+          },
+          "main": {
+            "development": 20000,
+            "train": 30000,
+            "users": 1000
+          }
+        },
+        "per_job_seconds": 2700,
+        "schema": "tlab-experiments-v1",
+        "search_fit_cap": 8,
+        "search_min_gain": 0.0001,
+        "search_min_novel": 50,
+        "search_min_queries": 200,
+        "search_min_users": 20,
+        "search_rounds": 1,
+        "stop_rss_gib": 10,
+        "target_rss_gib": 8,
+        "threads": 4,
+        "wall_hours": 1.5
+      },
+      "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+      "seed": 20261024,
+      "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+      "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_P20",
+      "protocol": "P20",
+      "methods": {
+        "random": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_random",
+        "popularity": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_popularity",
+        "recency_rule": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_recency_rule",
+        "personal_frequency": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_personal_frequency",
+        "decay_popularity": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_decay_popularity",
+        "original": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_original",
+        "no_pair": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_no_pair",
+        "manual": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_manual",
+        "decay": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_decay",
+        "all": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_all",
+        "forward": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_forward",
+        "random_search": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/P20_random_search"
+      }
+    },
+    "output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/summary_P20",
+    "status": "completed",
+    "attempts": [
+      {
+        "started": "2026-10-25T20:21:02.229398+00:00",
+        "number": 1,
+        "log": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/logs/summary_P20.attempt1.log",
+        "partial_output": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/runs/R-finish-search-isolated-001/jobs/summary_P20.attempt1.partial",
+        "wall_seconds_so_far": 14.318320256000334,
+        "finished": "2026-10-25T20:21:16.801448+00:00",
+        "wall_seconds": 14.568466207000256,
+        "returncode": 0,
+        "stop_reason": null
+      }
+    ],
+    "started": "2026-10-25T20:21:02.225140+00:00",
+    "resources": {
+      "peak_tree_rss_bytes": 280690688,
+      "minimum_system_available_bytes": 9409806336,
+      "target_rss_exceeded": false,
+      "poll_seconds": 0.25,
+      "limitations": "sampled sum of runner/descendant RSS; shared pages may be double counted and spikes missed; system available memory is OS estimate"
+    },
+    "finished": "2026-10-25T20:21:16.801937+00:00",
+    "request_hash": "effe68b21ed1d87063919f97cc2a8b7dec6737f37a5281f000ae1958dcd3c20e"
+  }
+}

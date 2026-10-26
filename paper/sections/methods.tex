@@ -1,0 +1,9 @@
+\section{Fixture and arithmetic}
+Three queries belong to two synthetic users; each has three candidates and
+exactly one positive item. The positive ranks are $(1,3,1)$ for A and $(2,1,2)$
+for B. We use single-positive normalized discounted cumulative gain, following
+the gain-based evaluation framework of \cite{jarvelin2002cumulated}.
+At cutoff two, a positive rank $r$ contributes $1/\log_2(r+1)$ if $r\leq 2$,
+and zero otherwise. Candidate-position tie keys are assigned independently of
+labels. Constructed history flags do not validate real temporal features.
+User bootstrap intervals on two artificial users exercise code only.

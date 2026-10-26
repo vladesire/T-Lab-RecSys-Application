@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "analysis_id": "A-fixture",
+  "engine": "ranking",
+  "inputs": [
+    {
+      "path": "runs/R-fixture",
+      "reason": "infrastructure acceptance"
+    }
+  ],
+  "series": [
+    {
+      "id": "A",
+      "run_id": "R-fixture",
+      "prediction_id": "A-p"
+    }
+  ],
+  "k": 2,
+  "comparisons": [],
+  "bootstrap": {
+    "replicates": 100,
+    "seed": 1,
+    "confidence": 0.95
+  }
+}

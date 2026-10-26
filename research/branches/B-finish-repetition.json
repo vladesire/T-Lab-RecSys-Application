@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "B-finish-repetition",
+  "title": "Repetition versus novelty ablation",
+  "purpose": "Shares the single E-finish-study run through B-finish-study. Child views must include parent evidence explicitly; shared outputs are never separate replications. Full local execution is blocked in this packet by absent raw data and infrastructure; preparation remains executable.",
+  "parent_id": "B-finish-study",
+  "hypothesis_ids": [
+    "H-finish-repeat"
+  ],
+  "planned_experiment_ids": [
+    "E-finish-study"
+  ],
+  "status": "closed",
+  "status_decision_id": "D-submission-results"
+}

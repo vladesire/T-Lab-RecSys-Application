@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "D-submission-final-plan",
+  "branch_ids": [
+    "B-submission-automatic"
+  ],
+  "hypothesis_ids": [
+    "H-submission-automatic"
+  ],
+  "recorded_at": "2026-10-25T20:15:53.111591+00:00",
+  "status": "prospective",
+  "judgment": "The assignment requires automatic feature comparison and final temporal evaluation. Execute the unchanged one-round/six-group search with search_fit_cap=8, bootstrap=1000 and no extra model seeds. A larger declared wall budget enables the calibration gate; no gate output or old run is edited. Freeze original, no_pair, manual, decay, all, forward and matched-random fitted models/features before scoring [23400000,26000000]. Primary final comparison is P20 forward-minus-manual event NDCG@10. Use 20000 deterministically sampled eligible test queries, seed offset8831; online strictly prior recorded histories and training-defined catalog/users. No model refit or selection using holdout. Native M19 remains development-only; the new standalone evaluator explicitly implements the held-out stage and is boundary-tested. Preserve all attempts, including synchronized-filesystem integrity failures.",
+  "evidence": [
+    "research/decisions/D-finish-study-plan.json",
+    "tools/evaluate_frozen_final.py",
+    "tests/reproduction/test_final_holdout.py"
+  ],
+  "alternatives": [
+    "Submit development-only findings: valid partial fallback but leaves final-test criterion incomplete.",
+    "Change phase labels or remove calibration/inventory gates: rejected.",
+    "Train a new architecture or expand feature grammar under the deadline: excluded."
+  ],
+  "next_actions": [
+    "Wait for all fixed/search finalists to complete.",
+    "Create the immutable final freeze, execute the holdout once and preserve its result.",
+    "Render all comparisons with exact evidence hashes and inspect the generated PDF."
+  ],
+  "supersedes": [
+    "D-finish-study-plan"
+  ],
+  "author": "Coordinator (AI-assisted), under author instruction to complete assignment criteria",
+  "model": null
+}

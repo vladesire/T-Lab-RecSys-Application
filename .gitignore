@@ -1,0 +1,45 @@
+# Local environments and interpreter/build caches
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
+.DS_Store
+._*
+# Raw data, extracted features, jobs, generated operational bundles and local paths
+/data/
+/inputs/
+/runs/*
+!/runs/published/
+
+/analyses/
+/reviews/
+/build/
+/releases/
+/local-history/
+/metadata-quarantine/
+/.restore-*/
+/worker_packets/
+/engines/tlab_warmup/data/
+/engines/tlab_warmup/runs/
+/engines/tlab_warmup/verification/
+# The small required iteration0 score/reference archive is deliberately tracked.
+# Complete evidence archives are distributed separately from source Git history.
+/artifacts/
+*.log
+# Automatic cold-start demonstration publications are regenerated locally.
+/configs/baseline-acceptance/coldstart-*/
+/paper/baseline-acceptance/coldstart-*/
+
+# Local reproduction outputs and separately distributed submission assets
+/paper/reproduced/
+/reports/reproduced/
+/tlab-submission-analysis.tar.xz
+/tlab-final-evidence-selected.tar.xz
+
+# Local launch configurations contain absolute machine paths.
+/configs/completion/
+/paper/submission/*.aux
+/paper/submission/*.fls
+/paper/submission/*.fdb_latexmk
+/paper/submission/main.pdf

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "run_id": "R-fixture",
+  "scientific": {
+    "experiment_id": "E-fixture",
+    "branch_id": "B-fixture",
+    "hypothesis_ids": [
+      "H-fixture"
+    ],
+    "phase": "fixture",
+    "runner_id": "fixture",
+    "protocol": {
+      "id": "P-fixture",
+      "split": "development",
+      "description": "synthetic fixture only"
+    },
+    "parameters": {
+      "variant": "base"
+    }
+  },
+  "data": [],
+  "identity": {
+    "scientific_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "code_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "data_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  }
+}

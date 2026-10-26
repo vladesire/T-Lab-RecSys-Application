@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "bundle_id": "compiled-fixture",
+  "bundle_kind": "compiled",
+  "status": "succeeded",
+  "created_at": "2026-10-25T00:00:00Z",
+  "files": [],
+  "metadata": {
+    "snapshot_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "pdf_path": "main.pdf",
+    "pdf_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "toolchain": {},
+    "checks": {
+      "passed": true,
+      "items": [
+        {
+          "id": "fixture",
+          "status": "passed",
+          "detail": "Synthetic infrastructure example, not research evidence.",
+          "evidence": []
+        }
+      ]
+    }
+  }
+}

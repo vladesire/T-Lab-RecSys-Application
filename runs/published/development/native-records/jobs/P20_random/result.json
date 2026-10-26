@@ -1,0 +1,105 @@
+{
+  "method": "random",
+  "seed": 20261024,
+  "protocol": "P20",
+  "query_candidate_hash": "7dcd0d6b6b54321c8feb7e702f488a647dd0cb9050da900fc68c1aab271feb43",
+  "metrics": {
+    "all": {
+      "queries": 20000,
+      "users": 744,
+      "ndcg10": 0.21456254439223188,
+      "recall10": 0.47495,
+      "ndcg10_user_macro": 0.21803216501448178,
+      "recall10_user_macro": 0.48329472246519817
+    },
+    "repeat": {
+      "queries": 15684,
+      "users": 697,
+      "ndcg10": 0.2136309222976869,
+      "recall10": 0.4739224687579699,
+      "ndcg10_user_macro": 0.2151357274925833,
+      "recall10_user_macro": 0.47687397444675306
+    },
+    "novel": {
+      "queries": 4316,
+      "users": 635,
+      "ndcg10": 0.2179479848303328,
+      "recall10": 0.47868396663577384,
+      "ndcg10_user_macro": 0.21290090023021405,
+      "recall10_user_macro": 0.4734133215173687
+    },
+    "V_search": {
+      "queries": 10238,
+      "users": 676,
+      "ndcg10": 0.21205658561595597,
+      "recall10": 0.47069740183629616,
+      "ndcg10_user_macro": 0.2206271597064579,
+      "recall10_user_macro": 0.4902365353267914
+    },
+    "V_check": {
+      "queries": 9762,
+      "users": 661,
+      "ndcg10": 0.21719069497116172,
+      "recall10": 0.4794099569760295,
+      "ndcg10_user_macro": 0.20946074017017124,
+      "recall10_user_macro": 0.46932032582091926
+    },
+    "anchor": {
+      "queries": 50,
+      "users": 30,
+      "ndcg10": 0.21498921205937527,
+      "recall10": 0.44,
+      "ndcg10_user_macro": 0.24013994228185911,
+      "recall10_user_macro": 0.45888888888888885
+    },
+    "new_queries": {
+      "queries": 19950,
+      "users": 744,
+      "ndcg10": 0.21456147504970768,
+      "recall10": 0.4750375939849624,
+      "ndcg10_user_macro": 0.21883748444918824,
+      "recall10_user_macro": 0.48442728216725167
+    },
+    "V_search_repeat": {
+      "queries": 8072,
+      "users": 625,
+      "ndcg10": 0.21260547445015981,
+      "recall10": 0.47249752229930625,
+      "ndcg10_user_macro": 0.22178403750727302,
+      "recall10_user_macro": 0.4900173096987419
+    },
+    "V_search_novel": {
+      "queries": 2166,
+      "users": 507,
+      "ndcg10": 0.21001104975737162,
+      "recall10": 0.46398891966759004,
+      "ndcg10_user_macro": 0.20961722954481282,
+      "recall10_user_macro": 0.46562283699335555
+    },
+    "V_check_repeat": {
+      "queries": 7612,
+      "users": 618,
+      "ndcg10": 0.2147183388800882,
+      "recall10": 0.4754335260115607,
+      "ndcg10_user_macro": 0.20663284256425596,
+      "recall10_user_macro": 0.4633951271444442
+    },
+    "V_check_novel": {
+      "queries": 2150,
+      "users": 501,
+      "ndcg10": 0.22594398546662772,
+      "recall10": 0.49348837209302326,
+      "ndcg10_user_macro": 0.21670836031224042,
+      "recall10_user_macro": 0.47855319266203383
+    }
+  },
+  "fit_seconds": 0.0,
+  "application_seconds": 0.2494600699997136,
+  "random_sanity": {
+    "expected_recall10": 0.47619047619047616,
+    "expected_ndcg10": 0.21635996848039743,
+    "recall_deviation_warning": false,
+    "tolerance": 0.05,
+    "interpretation": "finite-query random-score check; not a quality gate"
+  }
+}

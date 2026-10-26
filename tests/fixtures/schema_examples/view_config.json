@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "view_id": "V-fixture",
+  "branch_ids": [
+    "B-fixture"
+  ],
+  "hypothesis_ids": [],
+  "phases": [
+    "fixture"
+  ],
+  "experiment_paths": [],
+  "run_paths": [],
+  "analysis_paths": [],
+  "include_legacy_journal": false
+}

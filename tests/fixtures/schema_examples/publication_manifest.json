@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "bundle_id": "publication-fixture",
+  "bundle_kind": "publication",
+  "status": "succeeded",
+  "created_at": "2026-10-25T00:00:00Z",
+  "files": [],
+  "metadata": {
+    "publication_id": "P-fixture",
+    "mode": "draft",
+    "is_fixture": true,
+    "phases": [
+      "fixture"
+    ],
+    "analysis_fingerprints": [
+      "0000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "source_identity": {}
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "publication_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+    },
+    "mode": {
+      "enum": [
+        "draft",
+        "release"
+      ]
+    },
+    "source_dir": {
+      "type": "string"
+    },
+    "analyses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "alias": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "alias",
+          "path",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "artifacts": {
+      "type": "object",
+      "properties": {
+        "tables": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+              },
+              "analysis_alias": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+              },
+              "kind": {
+                "enum": [
+                  "metric_table",
+                  "comparison_table"
+                ]
+              },
+              "filters": {
+                "type": "object"
+              },
+              "columns": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "field": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "digits": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  },
+                  "required": [
+                    "field",
+                    "label"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1
+              },
+              "caption": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "analysis_alias",
+              "kind",
+              "filters",
+              "columns",
+              "caption"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "numbers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "pattern": "^[A-Za-z]+$"
+              },
+              "analysis_alias": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+              },
+              "pointer": {
+                "type": "string"
+              },
+              "digits": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "name",
+              "analysis_alias",
+              "pointer",
+              "digits"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "figures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+              },
+              "analysis_alias": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+              },
+              "kind": {
+                "enum": [
+                  "metric_bars",
+                  "comparison_intervals"
+                ]
+              },
+              "filters": {
+                "type": "object"
+              },
+              "order": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+                }
+              },
+              "title": {
+                "type": "string"
+              },
+              "ylabel": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "analysis_alias",
+              "kind",
+              "filters",
+              "order",
+              "title",
+              "ylabel"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "tables",
+        "numbers",
+        "figures"
+      ],
+      "additionalProperties": false
+    },
+    "required_comparison_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+          },
+          "statement": {
+            "type": "string"
+          },
+          "analysis_alias": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+          },
+          "pointer": {
+            "type": "string"
+          },
+          "qualifier": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "statement",
+          "analysis_alias",
+          "pointer",
+          "qualifier"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "publication_id",
+    "mode",
+    "source_dir",
+    "analyses",
+    "artifacts",
+    "required_comparison_ids",
+    "claims"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://researchflow.local/v1/publication_config.json"
+}

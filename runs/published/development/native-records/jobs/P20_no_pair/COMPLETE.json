@@ -1,0 +1,9 @@
+{
+  "completed": "2026-10-25T20:18:59.343359+00:00",
+  "request_hash": "a9c7655e44dfa055a0a17a41fae8877a3721ca74e7ebf2f5510fbd862e94eeda",
+  "files": {
+    "model.joblib": "4d6e072f935c9d8bfacbb4a1cd7d7e363d3eeb7ca086b41ae1a76fc3ae7f8977",
+    "predictions.npz": "730f8a818d4922cde475b08e48f1a53f3793cb2683fea52f1bd9bcf62874ab18",
+    "result.json": "6d906f2e130cff083d9be2b53544f003ef33dc52e19d70a64f6b930b8d0d0ee3"
+  }
+}

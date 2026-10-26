@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "branch_ids": [
+    "B-finish-study",
+    "B-finish-representations",
+    "B-finish-repetition"
+  ],
+  "hypothesis_ids": [
+    "H-finish-compact",
+    "H-finish-decay",
+    "H-finish-repeat"
+  ],
+  "recorded_at": "2026-10-25T18:24:11.391655+00:00",
+  "supersedes": [],
+  "author": "SCIENCE worker (AI-assisted)",
+  "model": null,
+  "id": "D-finish-study-plan",
+  "status": "prospective",
+  "judgment": "Authorize at most one fresh configured overnight-mode development batch. Preserve engine, base seed, raw identity, anchor, cutoffs, histories, models, main/calibration/iteration1 caps and blocked optional branches. Only wall_hours=0.4, bootstrap_replicates=1000, search_rounds=1, search_fit_cap=8 and additional_model_seed_offsets=[] change from accepted batch defaults; outer timeout=1800s. P20 event NDCG@10 is primary; U20 is sensitivity. Search is incidental secondary evidence; whole-development selected-method scores reuse V_search. No new seeds or favorable-result feature search. Record failed/calibration-gated outcomes; stop new science at elapsed minute 45.",
+  "evidence": [
+    "research/design.yaml",
+    "evidence/cold-start-verification/analysis.json",
+    "reproducibility/feature-manifest.json",
+    "reproducibility/baseline-readiness.json"
+  ],
+  "alternatives": [
+    "Run a final test or a new candidate/artist protocol: excluded by supported scope.",
+    "Search additional seeds/features after favorable outcomes: excluded.",
+    "Use the validated baseline fallback if computation is blocked."
+  ],
+  "next_actions": [
+    "Run the preparation helper after make setup and make data on the full repository.",
+    "Review printed shell-quoted command and launch once with a fresh run identity.",
+    "Use actual exported prediction IDs to configure the built-in analyzer, preserving all methods and unavailable comparisons."
+  ]
+}

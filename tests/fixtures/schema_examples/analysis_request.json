@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "analysis_id": "A-fixture",
+  "config": {},
+  "inputs": [
+    {
+      "run_id": "R-fixture",
+      "bundle_path": "/example/run",
+      "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ]
+}

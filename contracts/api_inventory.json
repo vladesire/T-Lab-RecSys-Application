@@ -1,0 +1,162 @@
+{
+  "M01": {
+    "module": "documents",
+    "source": "src/researchflow/documents.py",
+    "signatures": [
+      "load_document(path: Path) -> dict[str, Any]",
+      "canonical_bytes(value: Any) -> bytes",
+      "digest_document(value: Any) -> str",
+      "sha256_file(path: Path) -> str",
+      "atomic_write_json(path: Path, value: Any) -> None",
+      "validate_document(kind: str, value: Mapping[str, Any]) -> None",
+      "contained_path(root: Path, relative: str) -> Path",
+      "resolve_pointer(document: Any, pointer: str) -> Any"
+    ]
+  },
+  "M02": {
+    "module": "configuration",
+    "source": "src/researchflow/configuration.py",
+    "signatures": [
+      "resolve_experiment(project_root: Path, config_path: Path) -> dict[str, Any]",
+      "capture_provenance(project_root: Path, resolved: Mapping[str, Any], output_dir: Path) -> dict[str, Any]"
+    ]
+  },
+  "M03": {
+    "module": "bundles",
+    "source": "src/researchflow/bundles.py",
+    "signatures": [
+      "begin_bundle(output_root: Path, bundle_id: str) -> Path",
+      "commit_bundle(stage_dir: Path, final_dir: Path, manifest: Mapping[str, Any]) -> Path",
+      "verify_bundle(bundle_dir: Path, expected_kind: str | None = None) -> dict[str, Any]",
+      "bundle_fingerprint(manifest: Mapping[str, Any]) -> str"
+    ]
+  },
+  "M04": {
+    "module": "processes",
+    "source": "src/researchflow/processes.py",
+    "signatures": [
+      "run_process(argv: Sequence[str], cwd: Path, timeout_seconds: float, stdout_path: Path, stderr_path: Path, env: Mapping[str, str] | None = None, *, stop_file: Path | None = None, memory_limit_bytes: int | None = None) -> dict[str, Any]"
+    ]
+  },
+  "M05": {
+    "module": "experiments",
+    "source": "src/researchflow/experiments.py",
+    "signatures": [
+      "execute_experiment(project_root: Path, config_path: Path, *, run_id: str | None = None, freeze_path: Path | None = None) -> Path"
+    ]
+  },
+  "M06": {
+    "module": "research",
+    "source": "src/researchflow/research.py",
+    "signatures": [
+      "load_research(project_root: Path) -> dict[str, Any]",
+      "append_journal(project_root: Path, header: Mapping[str, Any], body: str) -> Path"
+    ]
+  },
+  "M07": {
+    "module": "ranking",
+    "source": "src/researchflow/ranking.py",
+    "signatures": [
+      "per_query_metrics(arrays: Mapping[str, Any], *, k: int) -> list[dict[str, Any]]",
+      "aggregate(rows: Sequence[Mapping[str, Any]], *, metric: str, weighting: str, subgroup: str = 'all') -> dict[str, Any]",
+      "paired_interval(left_rows: Sequence[Mapping[str, Any]], right_rows: Sequence[Mapping[str, Any]], *, metric: str, weighting: str, subgroup: str, replicates: int, seed: int, confidence: float = 0.95) -> dict[str, Any]"
+    ]
+  },
+  "M08": {
+    "module": "analysis",
+    "source": "src/researchflow/analysis.py",
+    "signatures": [
+      "analyze(project_root: Path, config_path: Path) -> Path"
+    ]
+  },
+  "M09": {
+    "module": "views",
+    "source": "src/researchflow/views.py",
+    "signatures": [
+      "build_view(project_root: Path, config_path: Path) -> dict[str, Any]",
+      "write_view(state: Mapping[str, Any], output_dir: Path) -> Path"
+    ]
+  },
+  "M10": {
+    "module": "context",
+    "source": "src/researchflow/context.py",
+    "signatures": [
+      "build_packet(project_root: Path, config_path: Path, output_dir: Path) -> Path",
+      "capture_response(packet_dir: Path, response_path: Path, metadata: Mapping[str, Any], output_dir: Path) -> Path"
+    ]
+  },
+  "M11": {
+    "module": "tables",
+    "source": "src/researchflow/tables.py",
+    "signatures": [
+      "render_tables(analysis: Mapping[str, Any], specs: Sequence[Mapping[str, Any]], output_dir: Path) -> list[dict[str, Any]]",
+      "render_numbers(analysis: Mapping[str, Any], specs: Sequence[Mapping[str, Any]], output_dir: Path) -> list[dict[str, Any]]"
+    ]
+  },
+  "M12": {
+    "module": "figures",
+    "source": "src/researchflow/figures.py",
+    "signatures": [
+      "render_figures(analysis: Mapping[str, Any], specs: Sequence[Mapping[str, Any]], output_dir: Path) -> list[dict[str, Any]]"
+    ]
+  },
+  "M13": {
+    "module": "publication",
+    "source": "src/researchflow/publication.py",
+    "signatures": [
+      "assemble_publication(project_root: Path, config_path: Path) -> Path"
+    ]
+  },
+  "M14": {
+    "module": "latex",
+    "source": "src/researchflow/latex.py",
+    "signatures": [
+      "doctor(project_root: Path) -> dict[str, Any]",
+      "compile_snapshot(snapshot_dir: Path, output_root: Path, *, timeout_seconds: float = 120.0) -> Path",
+      "inspect_build(compiled_dir: Path) -> dict[str, Any]"
+    ]
+  },
+  "M15": {
+    "module": "freeze",
+    "source": "src/researchflow/freeze.py",
+    "signatures": [
+      "freeze_study(project_root: Path, config_paths: Sequence[Path], output_path: Path) -> dict[str, Any]",
+      "check_final_gate(freeze_path: Path, resolved: Mapping[str, Any]) -> dict[str, Any]"
+    ]
+  },
+  "M16": {
+    "module": "release",
+    "source": "src/researchflow/release.py",
+    "signatures": [
+      "package_release(project_root: Path, snapshot_dir: Path, compiled_dir: Path, output_dir: Path, *, visual_review: Path | None = None) -> Path"
+    ]
+  },
+  "M17": {
+    "module": "cli",
+    "source": "src/researchflow/cli.py",
+    "signatures": [
+      "main(argv: Sequence[str] | None = None) -> int"
+    ]
+  },
+  "M18": {
+    "module": "smoke",
+    "source": "src/researchflow/smoke.py",
+    "signatures": [
+      "smoke(project_root: Path, *, compile_pdf: bool = True) -> dict[str, Any]"
+    ]
+  },
+  "M19": {
+    "module": "warmup_bridge",
+    "source": "runners/warmup/bridge.py",
+    "signatures": [
+      "run_warmup_bridge(request: Mapping[str, Any], output_dir: Path) -> dict[str, Any]"
+    ]
+  },
+  "M20": {
+    "module": "legacy",
+    "source": "src/researchflow/legacy.py",
+    "signatures": [
+      "import_legacy(project_root: Path, extracted_run_dir: Path, mapping_path: Path, *, run_id: str | None = None) -> Path"
+    ]
+  }
+}

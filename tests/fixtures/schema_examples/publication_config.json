@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "publication_id": "P-fixture",
+  "mode": "draft",
+  "source_dir": "paper",
+  "analyses": [
+    {
+      "alias": "main",
+      "path": "analyses/A-fixture",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "artifacts": {
+    "tables": [],
+    "numbers": [],
+    "figures": []
+  },
+  "required_comparison_ids": [],
+  "claims": []
+}

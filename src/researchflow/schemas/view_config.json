@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "view_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+    },
+    "branch_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+      }
+    },
+    "hypothesis_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$"
+      }
+    },
+    "phases": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "fixture",
+          "development",
+          "final"
+        ]
+      }
+    },
+    "experiment_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "run_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "analysis_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "include_legacy_journal": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "view_id",
+    "branch_ids",
+    "hypothesis_ids",
+    "phases",
+    "experiment_paths",
+    "run_paths",
+    "analysis_paths",
+    "include_legacy_journal"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://researchflow.local/v1/view_config.json"
+}

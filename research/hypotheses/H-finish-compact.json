@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "H-finish-compact",
+  "branch_ids": [
+    "B-finish-study",
+    "B-finish-representations"
+  ],
+  "question": "Does manual (17 features) lose at most 0.005 absolute NDCG@10 against all (47 features) on P20 development queries?",
+  "rationale": "Operational questions chosen after inspecting previous development pilots; one bounded reproduction/extension batch, not new independent confirmation. The tolerance is chosen for this study, not a domain constant.",
+  "estimand": {
+    "metric": "ndcg@10",
+    "weighting": "event",
+    "primary_protocol": "P20",
+    "sensitivity_protocol": "U20",
+    "split": "development",
+    "interval": "95% paired user-cluster bootstrap; conditional descriptive development uncertainty",
+    "secondary_outputs": [
+      "recall@10",
+      "equal-user means",
+      "all/repeat/novel query and user counts"
+    ],
+    "evidence_boundary": "Pilot-informed and development-only; already seen pilot and historical overnight outputs. No preregistration, blind confirmation, independent sample or final-test claim."
+  },
+  "comparison": {
+    "left": "manual",
+    "right": "all",
+    "subgroup": "all",
+    "difference": "manual-minus-all",
+    "feature_counts": [
+      17,
+      47
+    ]
+  },
+  "decision_rule": {
+    "delta": 0.005,
+    "supported": "ci_low > -0.005",
+    "unsupported": "ci_high < -0.005",
+    "inconclusive": "otherwise; crossing or touching -0.005 does not establish inferiority or equivalence",
+    "cost_boundary": "Compare measured fit/application/process costs. The full dictionary is constructed upstream for every method; no feature-construction saving follows from selected column count."
+  },
+  "references": [
+    "evidence/baseline/analysis.json",
+    "evidence/cold-start-verification/analysis.json",
+    "research/design.yaml",
+    "research/decisions/D-finish-study-plan.json"
+  ],
+  "created_at": "2026-10-25T18:24:11.391655+00:00"
+}

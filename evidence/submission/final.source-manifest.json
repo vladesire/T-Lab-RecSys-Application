@@ -1,0 +1,28 @@
+{
+  "kind": "standalone_temporal_holdout_v1",
+  "files": {
+    "P20/all.npz": "62b1ac08d7dc450bec48fab8beba354f12e00d44ba4d6f0d22f8b2576b790e75",
+    "P20/decay.npz": "96423900eb5fc92ff520ba443c5b466620ba0a957074e6a33675deef6f65ceec",
+    "P20/features.npy": "1617dbdee8c68fc512b5559eb1004a4334440275ad9a93ce9a02feb8e652b5ec",
+    "P20/forward.npz": "ce3a7c824e4851c3bef301a395bf8fc4c90ef9ad5f2f49d614838e60caef4f7a",
+    "P20/manual.npz": "5eedb7934110255a6c09b0949ee759203cdfa05c0690d47617f0261dfff33e10",
+    "P20/no_pair.npz": "9fb021ae49ad14d6fc5a5620f5d557d04d2f543b8e328eb1f22cc8fa86f8563f",
+    "P20/original.npz": "1a6de460fe0366af2d7f52eb616dd98232211adfcfc4288abc092b72c6b1f2bc",
+    "P20/queries.json.gz": "1b52fb918622d7c373096a81efed4a7f082fb5bf29284eabec6a938990809fde",
+    "P20/random_search.npz": "ce3a7c824e4851c3bef301a395bf8fc4c90ef9ad5f2f49d614838e60caef4f7a",
+    "P20/summary.json": "135f3e0ee2c363d389c86a99ed13a8435b33a777be77f5cd0a37860f50d44dce",
+    "STARTED.json": "68ba4200c526837ffff5bade84e4bc034ab5379f2d8c0385e9859279782332d4",
+    "U20/all.npz": "89baca22ed826b8ec0821123be703e553988651fe15fc0059e294457db92872e",
+    "U20/decay.npz": "26b072933692aad1e2107c6480bb7e1c7d44df1d99a95476573aff39d6d7b6e2",
+    "U20/features.npy": "5c076100c640a99f682d5b06356030caa631d0740b32a0035918e6371267d474",
+    "U20/forward.npz": "902a665954b872542d00f695e82dcfad7b7f0e065a0e215e2566dd35573dab5c",
+    "U20/manual.npz": "70d93288db5b5c8a8d696490ae25c3292deb7ea9fbc9403864f4e54dd7c34d18",
+    "U20/no_pair.npz": "c249aac57075d50ee0cb8bf83783e560d407d62f9feb01a13f2a8bf6bd00c18a",
+    "U20/original.npz": "bacd12865cbe8e2e72218b5f006650819c9dea747b323916cdef47d9c51197e4",
+    "U20/queries.json.gz": "2ce2a3f4d68c8d176959aee5e047f4c496238983185346e67a8634cb33d5a4dc",
+    "U20/random_search.npz": "902a665954b872542d00f695e82dcfad7b7f0e065a0e215e2566dd35573dab5c",
+    "U20/summary.json": "87b28f585237bb46b291f118e3a4a4f6726dbecf78f4ba2c4806a8c117bb6db7",
+    "freeze.json": "96c3d24f322623ce63e68ba785abc99fbe09b7924098ad9801836279498b51a1",
+    "result.json": "599893d2ae9e0437415cb9b095721a5c424a391111f81ebd989d6ae0b2455594"
+  }
+}

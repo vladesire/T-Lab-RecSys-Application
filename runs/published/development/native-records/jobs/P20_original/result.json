@@ -1,0 +1,112 @@
+{
+  "method": "original",
+  "seed": 20261024,
+  "protocol": "P20",
+  "query_candidate_hash": "7dcd0d6b6b54321c8feb7e702f488a647dd0cb9050da900fc68c1aab271feb43",
+  "metrics": {
+    "all": {
+      "queries": 20000,
+      "users": 744,
+      "ndcg10": 0.7925617699000883,
+      "recall10": 0.9174,
+      "ndcg10_user_macro": 0.7582816679031867,
+      "recall10_user_macro": 0.8952036529945426
+    },
+    "repeat": {
+      "queries": 15684,
+      "users": 697,
+      "ndcg10": 0.933723198707402,
+      "recall10": 1.0,
+      "ndcg10_user_macro": 0.9393605788663657,
+      "recall10_user_macro": 1.0
+    },
+    "novel": {
+      "queries": 4316,
+      "users": 635,
+      "ndcg10": 0.2795923886642433,
+      "recall10": 0.6172381835032438,
+      "ndcg10_user_macro": 0.2859193512665962,
+      "recall10_user_macro": 0.6153966902414852
+    },
+    "V_search": {
+      "queries": 10238,
+      "users": 676,
+      "ndcg10": 0.7978278870369985,
+      "recall10": 0.9208829849579996,
+      "ndcg10_user_macro": 0.77391215295545,
+      "recall10_user_macro": 0.90988768003264
+    },
+    "V_check": {
+      "queries": 9762,
+      "users": 661,
+      "ndcg10": 0.7870388742590632,
+      "recall10": 0.9137471829543127,
+      "ndcg10_user_macro": 0.7609040542664842,
+      "recall10_user_macro": 0.892602005318286
+    },
+    "anchor": {
+      "queries": 50,
+      "users": 30,
+      "ndcg10": 0.7127231407624838,
+      "recall10": 0.86,
+      "ndcg10_user_macro": 0.6891533548618725,
+      "recall10_user_macro": 0.8488888888888889
+    },
+    "new_queries": {
+      "queries": 19950,
+      "users": 744,
+      "ndcg10": 0.7927618667149696,
+      "recall10": 0.9175438596491228,
+      "ndcg10_user_macro": 0.7584610122193982,
+      "recall10_user_macro": 0.8953746181852653
+    },
+    "V_search_repeat": {
+      "queries": 8072,
+      "users": 625,
+      "ndcg10": 0.9336040969066847,
+      "recall10": 1.0,
+      "ndcg10_user_macro": 0.9377039297652463,
+      "recall10_user_macro": 1.0
+    },
+    "V_search_novel": {
+      "queries": 2166,
+      "users": 507,
+      "ndcg10": 0.2918327041800701,
+      "recall10": 0.6260387811634349,
+      "ndcg10_user_macro": 0.31774631944974563,
+      "recall10_user_macro": 0.6535282688663995
+    },
+    "V_check_repeat": {
+      "queries": 7612,
+      "users": 618,
+      "ndcg10": 0.9338494979369591,
+      "recall10": 1.0,
+      "ndcg10_user_macro": 0.9412301070782092,
+      "recall10_user_macro": 1.0
+    },
+    "V_check_novel": {
+      "queries": 2150,
+      "users": 501,
+      "ndcg10": 0.2672609824282987,
+      "recall10": 0.6083720930232558,
+      "ndcg10_user_macro": 0.26650295999191936,
+      "recall10_user_macro": 0.5955344823604589
+    }
+  },
+  "fit_seconds": 1.6735254829995938,
+  "application_seconds": 0.6664951390002898,
+  "model_serialization_seconds": 0.00876803800019843,
+  "reused_identical_model_from": null,
+  "feature_names": [
+    "user_count",
+    "user_hard_7d",
+    "item_count",
+    "item_hard_7d",
+    "item_hard_share_7d",
+    "user_item_count",
+    "user_recency_seconds",
+    "user_item_recency_seconds",
+    "user_item_missing"
+  ],
+  "feature_count": 9
+}

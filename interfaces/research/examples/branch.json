@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "B-fixture",
+  "title": "Infrastructure",
+  "purpose": "Verify pipeline",
+  "parent_id": null,
+  "hypothesis_ids": [
+    "H-fixture"
+  ],
+  "planned_experiment_ids": [
+    "E-fixture"
+  ],
+  "status": "planned",
+  "status_decision_id": null
+}

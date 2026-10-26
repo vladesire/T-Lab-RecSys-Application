@@ -1,0 +1,24 @@
+# Synthetic infrastructure acceptance only; never research evidence.
+schema_version: 1
+scientific:
+  experiment_id: E-fixture
+  branch_id: B-fixture
+  hypothesis_ids: [H-fixture]
+  phase: fixture
+  runner_id: fixture
+  protocol:
+    protocol_id: P-fixture
+    split: development
+    history: synthetic_prior_only
+    timestamp_unit: synthetic_tick
+    tie_break: preassigned_candidate_position
+  parameters:
+    score_scale: 1.0
+runtime:
+  command: [python3, runners/fixture/runner.py]
+  code_paths: [runners/fixture/runner.py]
+  data_refs: []
+  research_paths: [research/hypotheses/H-fixture.yaml, research/branches/B-fixture.yaml]
+  resources:
+    timeout_seconds: 30
+    memory_limit_bytes: null

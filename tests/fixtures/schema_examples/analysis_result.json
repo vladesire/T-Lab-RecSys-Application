@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "analysis_id": "A-fixture",
+  "inputs": [
+    {
+      "run_id": "R-fixture",
+      "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "phase": "fixture",
+      "origin": "fresh_execution"
+    }
+  ],
+  "phases": [
+    "fixture"
+  ],
+  "metrics": [
+    {
+      "method_id": "A",
+      "protocol_id": "P-fixture",
+      "split": "development",
+      "subgroup": "all",
+      "metric": "ndcg@2",
+      "weighting": "event",
+      "value": 0.6666666666666666,
+      "n_queries": 3,
+      "n_users": 2,
+      "query_set_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "candidate_set_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "series_id": "A"
+    }
+  ],
+  "comparisons": [],
+  "coverage": [],
+  "costs": [],
+  "checks": {
+    "passed": true,
+    "items": [
+      {
+        "id": "fixture",
+        "status": "passed",
+        "detail": "Synthetic infrastructure example, not research evidence.",
+        "evidence": []
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic example only."
+  ]
+}

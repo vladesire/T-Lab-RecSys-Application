@@ -1,0 +1,52 @@
+{
+  "kind": "fit",
+  "config": {
+    "additional_model_seed_offsets": [],
+    "bootstrap_replicates": 1000,
+    "data": "/tmp/tlab-deadline-compute-4639/data/dd6f3a19eef5866e346c3270e098baa641a44948/multi_event.parquet",
+    "iteration1_output": "runs/iteration1",
+    "low_memory_seconds": 10,
+    "max_retries": 1,
+    "maximum_selected_rows": 8000000,
+    "minimum_available_gib": 4,
+    "optional_100_alternatives": "blocked_pending_variable_cardinality_validation",
+    "optional_3000_user_panel": "blocked_pending_secondary_scale_calibration",
+    "optional_artist": "blocked_pending_mapping_semantics_validation",
+    "panels": {
+      "calibration": {
+        "development": 250,
+        "train": 300,
+        "users": 100
+      },
+      "iteration1": {
+        "development": 5000,
+        "train": 3000,
+        "users": 100
+      },
+      "main": {
+        "development": 20000,
+        "train": 30000,
+        "users": 1000
+      }
+    },
+    "per_job_seconds": 2700,
+    "schema": "tlab-experiments-v1",
+    "search_fit_cap": 8,
+    "search_min_gain": 0.0001,
+    "search_min_novel": 50,
+    "search_min_queries": 200,
+    "search_min_users": 20,
+    "search_rounds": 1,
+    "stop_rss_gib": 10,
+    "target_rss_gib": 8,
+    "threads": 4,
+    "wall_hours": 1.5
+  },
+  "anchor": "/tmp/tlab-deadline-compute-4639/engines/tlab_warmup/provenance/iteration0/results.tar.gz",
+  "seed": 20261024,
+  "expected_code_hash": "85e9df42b91fd4313f0cf4b0b273a7990c8e78d397a85a559ed67cde5578528d",
+  "protocol_result": "/tmp/tlab-deadline-compute-4639/runs/.staging/R-finish-search-isolated-001/payload/workspace/data/batches/358f2461cb6a2b773294/prepare_U20",
+  "method": "random",
+  "feature_set": "random",
+  "verify_anchor": false
+}

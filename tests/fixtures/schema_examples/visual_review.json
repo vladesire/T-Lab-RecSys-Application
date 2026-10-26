@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "reviewer": "fixture",
+  "recorded_at": "2026-10-25T00:00:00Z",
+  "pdf_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "outcome": "passed",
+  "notes": "Schema fixture only; not an actual visual acceptance."
+}
